@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
-import Navigation from "./pages/auth/Navigation.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Login from "./pages/auth/Login";
 
 function App() {
 	return (
 		<>
 			<ToastContainer />
-			<Navigation />
+			<Login />
 			<main className="py-3">
 				<Outlet />
 			</main>
