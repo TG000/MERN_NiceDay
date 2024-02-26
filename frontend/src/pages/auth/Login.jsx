@@ -1,11 +1,11 @@
 import React from "react";
 import { FaGoogle, FaFacebook } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import "./Login.css";
+import "./Auth.css";
 
 const Login = () => {
 	return (
-		<div>
+		<>
 			<div className="w-[430px] h-[520px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
 				<div className="w-[200px] h-[200px] absolute rounded-[50%] bg-gradient-to-b from-[#708090] to-[#C0C0C0] left-[-80px] top-[-80px]"></div>
 				<div className="w-[200px] h-[200px] absolute rounded-[50%] bg-gradient-to-r from-[#ff512f] to-[#f09819] right-[-30px] bottom-[-80px]"></div>
@@ -82,7 +82,7 @@ const Login = () => {
 					</Link>
 				</p>
 			</form>
-		</div>
+		</>
 	);
 };
 
