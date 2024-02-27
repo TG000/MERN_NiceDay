@@ -73,46 +73,39 @@ const Navbar = () => {
 							<nav className="header__menu mobile-menu">
 								<ul>
 									<li className="active">
-										<a href="./index.html">Home</a>
+										<a href="/">Home</a>
 									</li>
 									<li>
-										<a href="./shop.html">Shop</a>
+										<a href="/about">About</a>
 									</li>
 									<li>
-										<a href="#">Pages</a>
+										<a href="/shop">Shop</a>
 										<ul className="dropdown">
 											<li>
-												<a href="./about.html">
-													About Us
-												</a>
+												<a href="./about.html">Women</a>
 											</li>
 											<li>
 												<a href="./shop-details.html">
-													Shop Details
+													Men
 												</a>
 											</li>
 											<li>
 												<a href="./shopping-cart.html">
-													Shopping Cart
+													Mix
 												</a>
 											</li>
 											<li>
 												<a href="./checkout.html">
-													Check Out
-												</a>
-											</li>
-											<li>
-												<a href="./blog-details.html">
-													Blog Details
+													Accessories
 												</a>
 											</li>
 										</ul>
 									</li>
 									<li>
-										<a href="./blog.html">Blog</a>
+										<a href="/blog">Blog</a>
 									</li>
 									<li>
-										<a href="./contact.html">Contacts</a>
+										<a href="/contact">Contact</a>
 									</li>
 								</ul>
 							</nav>

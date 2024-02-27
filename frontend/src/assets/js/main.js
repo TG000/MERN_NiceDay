@@ -102,24 +102,24 @@
         CountDown
     --------------------*/
 	// For demo preview start
-	var today = new Date();
-	var dd = String(today.getDate()).padStart(2, "0");
-	var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
-	var yyyy = today.getFullYear();
+	// var today = new Date();
+	// var dd = String(today.getDate()).padStart(2, "0");
+	// var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+	// var yyyy = today.getFullYear();
 
-	if (mm == 12) {
-		mm = "01";
-		yyyy = yyyy + 1;
-	} else {
-		mm = parseInt(mm) + 1;
-		mm = String(mm).padStart(2, "0");
-	}
-	var timerdate = mm + "/" + dd + "/" + yyyy;
+	// if (mm == 12) {
+	// 	mm = "01";
+	// 	yyyy = yyyy + 1;
+	// } else {
+	// 	mm = parseInt(mm) + 1;
+	// 	mm = String(mm).padStart(2, "0");
+	// }
+	// var timerdate = mm + "/" + dd + "/" + yyyy;
 	// For demo preview end
 
 	// Uncomment below and use your date //
 
-	/* var timerdate = "2020/12/30" */
+	var timerdate = "2024/03/02";
 
 	$("#countdown").countdown(timerdate, function (event) {
 		$(this).html(

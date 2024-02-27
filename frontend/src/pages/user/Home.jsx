@@ -53,7 +53,7 @@ function Home() {
 								<div className="col-xl-5 col-lg-7 col-md-8">
 									<div className="hero__text">
 										<h6>Summer Collection</h6>
-										<h2>Fall - Winter Collections 2030</h2>
+										<h2>Fall - Winter Collections 2024</h2>
 										<p>
 											A specialist label creating luxury
 											essentials. Ethically crafted with
@@ -95,7 +95,7 @@ function Home() {
 								<div className="col-xl-5 col-lg-7 col-md-8">
 									<div className="hero__text">
 										<h6>Summer Collection</h6>
-										<h2>Fall - Winter Collections 2030</h2>
+										<h2>Fall - Winter Collections 2024</h2>
 										<p>
 											A specialist label creating luxury
 											essentials. Ethically crafted with
@@ -142,7 +142,7 @@ function Home() {
 									/>
 								</div>
 								<div className="banner__item__text">
-									<h2>Clothing Collections 2030</h2>
+									<h2>Clothing Collections 2024</h2>
 									<a href="#">Shop now</a>
 								</div>
 							</div>
@@ -170,7 +170,7 @@ function Home() {
 									/>
 								</div>
 								<div className="banner__item__text">
-									<h2>Shoes Spring 2030</h2>
+									<h2>Shoes Spring 2024</h2>
 									<a href="#">Shop now</a>
 								</div>
 							</div>
@@ -751,19 +751,19 @@ function Home() {
 									id="countdown"
 								>
 									<div className="cd-item">
-										<span>3</span>
+										<span>00</span>
 										<p>Days</p>
 									</div>
 									<div className="cd-item">
-										<span>1</span>
+										<span>00</span>
 										<p>Hours</p>
 									</div>
 									<div className="cd-item">
-										<span>50</span>
+										<span>00</span>
 										<p>Minutes</p>
 									</div>
 									<div className="cd-item">
-										<span>18</span>
+										<span>00</span>
 										<p>Seconds</p>
 									</div>
 								</div>
