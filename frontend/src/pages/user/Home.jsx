@@ -1,168 +1,52 @@
 import React from "react";
-import "../User.css";
+import { Footer, Navbar } from "../../components/";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+
+// Css import
+import "../../assets/css/bootstrap.min.css";
+import "../../assets/css/elegant-icons.css";
+import "../../assets/css/font-awesome.min.css";
+import "../../assets/css/magnific-popup.css";
+import "../../assets/css/nice-select.css";
+import "../../assets/css/magnific-popup.css";
+import "../../assets/css/slicknav.min.css";
+import "../../assets/css/style.css";
+
+// Js import
+import "../../assets/js/bootstrap.min.js";
+import "../../assets/js/main.js";
 
 function Home() {
 	return (
 		<>
-			{/* Offcanvas Menu Begin */}
-			<div className="offcanvas-menu-overlay"></div>
-			<div className="offcanvas-menu-wrapper">
-				<div className="offcanvas__option">
-					<div className="offcanvas__links">
-						<a href="#">Sign in</a>
-						<a href="#">FAQs</a>
-					</div>
-					<div className="offcanvas__top__hover">
-						<span>
-							Usd <i className="arrow_carrot-down"></i>
-						</span>
-						<ul>
-							<li>USD</li>
-							<li>EUR</li>
-							<li>USD</li>
-						</ul>
-					</div>
-				</div>
-				<div className="offcanvas__nav__option">
-					<a href="#" className="search-switch">
-						<img src="img/icon/search.png" alt="" />
-					</a>
-					<a href="#">
-						<img src="img/icon/heart.png" alt="" />
-					</a>
-					<a href="#">
-						<img src="img/icon/cart.png" alt="" /> <span>0</span>
-					</a>
-					<div className="price">$0.00</div>
-				</div>
-				<div id="mobile-menu-wrap"></div>
-				<div className="offcanvas__text">
-					<p>Free shipping, 30-day return or refund guarantee.</p>
-				</div>
-			</div>
-			{/* Offcanvas Menu End */}
-
-			{/* Header Section Begin */}
-			<header className="header">
-				<div className="header__top">
-					<div className="container">
-						<div className="row">
-							<div className="col-lg-6 col-md-7">
-								<div className="header__top__left">
-									<p>
-										Free shipping, 30-day return or refund
-										guarantee.
-									</p>
-								</div>
-							</div>
-							<div className="col-lg-6 col-md-5">
-								<div className="header__top__right">
-									<div className="header__top__links">
-										<a href="#">Sign in</a>
-										<a href="#">FAQs</a>
-									</div>
-									<div className="header__top__hover">
-										<span>
-											Usd{" "}
-											<i className="arrow_carrot-down"></i>
-										</span>
-										<ul>
-											<li>USD</li>
-											<li>EUR</li>
-											<li>USD</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="container">
-					<div className="row">
-						<div className="col-lg-3 col-md-3">
-							<div className="header__logo">
-								<a href="./index.html">
-									<img src="img/logo.png" alt="" />
-								</a>
-							</div>
-						</div>
-						<div className="col-lg-6 col-md-6">
-							<nav className="header__menu mobile-menu">
-								<ul>
-									<li className="active">
-										<a href="./index.html">Home</a>
-									</li>
-									<li>
-										<a href="./shop.html">Shop</a>
-									</li>
-									<li>
-										<a href="#">Pages</a>
-										<ul className="dropdown">
-											<li>
-												<a href="./about.html">
-													About Us
-												</a>
-											</li>
-											<li>
-												<a href="./shop-details.html">
-													Shop Details
-												</a>
-											</li>
-											<li>
-												<a href="./shopping-cart.html">
-													Shopping Cart
-												</a>
-											</li>
-											<li>
-												<a href="./checkout.html">
-													Check Out
-												</a>
-											</li>
-											<li>
-												<a href="./blog-details.html">
-													Blog Details
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="./blog.html">Blog</a>
-									</li>
-									<li>
-										<a href="./contact.html">Contacts</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
-						<div className="col-lg-3 col-md-3">
-							<div className="header__nav__option">
-								<a href="#" className="search-switch">
-									<img src="img/icon/search.png" alt="" />
-								</a>
-								<a href="#">
-									<img src="img/icon/heart.png" alt="" />
-								</a>
-								<a href="#">
-									<img src="img/icon/cart.png" alt="" />{" "}
-									<span>0</span>
-								</a>
-								<div className="price">$0.00</div>
-							</div>
-						</div>
-					</div>
-					<div className="canvas__open">
-						<i className="fa fa-bars"></i>
-					</div>
-				</div>
-			</header>
-			{/* Header Section End */}
+			<Navbar />
 
 			{/* Hero Section Begin */}
 			<section className="hero">
-				<div className="hero__slider owl-carousel">
+				<OwlCarousel
+					className="hero__slider"
+					loop={true}
+					margin={0}
+					items={1}
+					dots={false}
+					nav={true}
+					navText={[
+						"<span class='arrow_left'><span/>",
+						"<span class='arrow_right'><span/>",
+					]}
+					animateOut={"fadeOut"}
+					animateIn={"fadeIn"}
+					smartSpeed={1200}
+					autoplay={false}
+				>
 					<div
-						className="hero__items set-bg"
-						data-setbg="img/hero/hero-1.jpg"
+						className="hero__items item"
+						style={{
+							backgroundImage:
+								"url(src/assets/img/hero/hero-1.jpg)",
+						}}
 					>
 						<div className="container">
 							<div className="row">
@@ -200,8 +84,11 @@ function Home() {
 						</div>
 					</div>
 					<div
-						className="hero__items set-bg"
-						data-setbg="img/hero/hero-2.jpg"
+						className="hero__items item"
+						style={{
+							backgroundImage:
+								"url(src/assets/img/hero/hero-2.jpg)",
+						}}
 					>
 						<div className="container">
 							<div className="row">
@@ -238,7 +125,7 @@ function Home() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</OwlCarousel>
 			</section>
 			{/* Hero Section End */}
 
@@ -249,7 +136,10 @@ function Home() {
 						<div className="col-lg-7 offset-lg-4">
 							<div className="banner__item">
 								<div className="banner__item__pic">
-									<img src="img/banner/banner-1.jpg" alt="" />
+									<img
+										src="src/assets/img/banner/banner-1.jpg"
+										alt=""
+									/>
 								</div>
 								<div className="banner__item__text">
 									<h2>Clothing Collections 2030</h2>
@@ -260,7 +150,10 @@ function Home() {
 						<div className="col-lg-5">
 							<div className="banner__item banner__item--middle">
 								<div className="banner__item__pic">
-									<img src="img/banner/banner-2.jpg" alt="" />
+									<img
+										src="src/assets/img/banner/banner-2.jpg"
+										alt=""
+									/>
 								</div>
 								<div className="banner__item__text">
 									<h2>Accessories</h2>
@@ -271,7 +164,10 @@ function Home() {
 						<div className="col-lg-7">
 							<div className="banner__item banner__item--last">
 								<div className="banner__item__pic">
-									<img src="img/banner/banner-3.jpg" alt="" />
+									<img
+										src="src/assets/img/banner/banner-3.jpg"
+										alt=""
+									/>
 								</div>
 								<div className="banner__item__text">
 									<h2>Shoes Spring 2030</h2>
@@ -304,15 +200,18 @@ function Home() {
 						<div className="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
 							<div className="product__item">
 								<div
-									className="product__item__pic set-bg"
-									data-setbg="img/product/product-1.jpg"
+									className="product__item__pic"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/product/product-1.jpg)",
+									}}
 								>
 									<span className="label">New</span>
 									<ul className="product__hover">
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/heart.png"
+													src="src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
@@ -320,7 +219,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/compare.png"
+													src="src/assets/img/icon/compare.png"
 													alt=""
 												/>{" "}
 												<span>Compare</span>
@@ -329,7 +228,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/search.png"
+													src="src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>
@@ -356,7 +255,7 @@ function Home() {
 										<label className="active black">
 											<input type="radio" id="pc-2" />
 										</label>
-										<label className="grey" for="pc-3">
+										<label className="grey">
 											<input type="radio" id="pc-3" />
 										</label>
 									</div>
@@ -366,14 +265,17 @@ function Home() {
 						<div className="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
 							<div className="product__item">
 								<div
-									className="product__item__pic set-bg"
-									data-setbg="img/product/product-2.jpg"
+									className="product__item__pic"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/product/product-2.jpg)",
+									}}
 								>
 									<ul className="product__hover">
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/heart.png"
+													src="src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
@@ -381,7 +283,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/compare.png"
+													src="src/assets/img/icon/compare.png"
 													alt=""
 												/>{" "}
 												<span>Compare</span>
@@ -390,7 +292,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/search.png"
+													src="src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>
@@ -411,16 +313,13 @@ function Home() {
 									</div>
 									<h5>$67.24</h5>
 									<div className="product__color__select">
-										<label for="pc-4">
+										<label>
 											<input type="radio" id="pc-4" />
 										</label>
-										<label
-											className="active black"
-											for="pc-5"
-										>
+										<label className="active black">
 											<input type="radio" id="pc-5" />
 										</label>
-										<label className="grey" for="pc-6">
+										<label className="grey">
 											<input type="radio" id="pc-6" />
 										</label>
 									</div>
@@ -430,15 +329,18 @@ function Home() {
 						<div className="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
 							<div className="product__item sale">
 								<div
-									className="product__item__pic set-bg"
-									data-setbg="img/product/product-3.jpg"
+									className="product__item__pic"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/product/product-3.jpg)",
+									}}
 								>
 									<span className="label">Sale</span>
 									<ul className="product__hover">
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/heart.png"
+													src="src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
@@ -446,7 +348,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/compare.png"
+													src="src/assets/img/icon/compare.png"
 													alt=""
 												/>{" "}
 												<span>Compare</span>
@@ -455,7 +357,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/search.png"
+													src="src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>
@@ -476,16 +378,13 @@ function Home() {
 									</div>
 									<h5>$43.48</h5>
 									<div className="product__color__select">
-										<label for="pc-7">
+										<label>
 											<input type="radio" id="pc-7" />
 										</label>
-										<label
-											className="active black"
-											for="pc-8"
-										>
+										<label className="active black">
 											<input type="radio" id="pc-8" />
 										</label>
-										<label className="grey" for="pc-9">
+										<label className="grey">
 											<input type="radio" id="pc-9" />
 										</label>
 									</div>
@@ -495,14 +394,17 @@ function Home() {
 						<div className="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
 							<div className="product__item">
 								<div
-									className="product__item__pic set-bg"
-									data-setbg="img/product/product-4.jpg"
+									className="product__item__pic"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/product/product-4.jpg)",
+									}}
 								>
 									<ul className="product__hover">
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/heart.png"
+													src="src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
@@ -510,7 +412,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/compare.png"
+													src="src/assets/img/icon/compare.png"
 													alt=""
 												/>{" "}
 												<span>Compare</span>
@@ -519,7 +421,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/search.png"
+													src="src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>
@@ -540,16 +442,13 @@ function Home() {
 									</div>
 									<h5>$60.9</h5>
 									<div className="product__color__select">
-										<label for="pc-10">
+										<label>
 											<input type="radio" id="pc-10" />
 										</label>
-										<label
-											className="active black"
-											for="pc-11"
-										>
+										<label className="active black">
 											<input type="radio" id="pc-11" />
 										</label>
-										<label className="grey" for="pc-12">
+										<label className="grey">
 											<input type="radio" id="pc-12" />
 										</label>
 									</div>
@@ -559,14 +458,17 @@ function Home() {
 						<div className="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
 							<div className="product__item">
 								<div
-									className="product__item__pic set-bg"
-									data-setbg="img/product/product-5.jpg"
+									className="product__item__pic"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/product/product-5.jpg)",
+									}}
 								>
 									<ul className="product__hover">
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/heart.png"
+													src="src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
@@ -574,7 +476,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/compare.png"
+													src="src/assets/img/icon/compare.png"
 													alt=""
 												/>{" "}
 												<span>Compare</span>
@@ -583,7 +485,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/search.png"
+													src="src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>
@@ -604,16 +506,13 @@ function Home() {
 									</div>
 									<h5>$31.37</h5>
 									<div className="product__color__select">
-										<label for="pc-13">
+										<label>
 											<input type="radio" id="pc-13" />
 										</label>
-										<label
-											className="active black"
-											for="pc-14"
-										>
+										<label className="active black">
 											<input type="radio" id="pc-14" />
 										</label>
-										<label className="grey" for="pc-15">
+										<label className="grey">
 											<input type="radio" id="pc-15" />
 										</label>
 									</div>
@@ -623,15 +522,18 @@ function Home() {
 						<div className="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
 							<div className="product__item sale">
 								<div
-									className="product__item__pic set-bg"
-									data-setbg="img/product/product-6.jpg"
+									className="product__item__pic"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/product/product-6.jpg)",
+									}}
 								>
 									<span className="label">Sale</span>
 									<ul className="product__hover">
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/heart.png"
+													src="src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
@@ -639,7 +541,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/compare.png"
+													src="src/assets/img/icon/compare.png"
 													alt=""
 												/>{" "}
 												<span>Compare</span>
@@ -648,7 +550,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/search.png"
+													src="src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>
@@ -669,16 +571,13 @@ function Home() {
 									</div>
 									<h5>$98.49</h5>
 									<div className="product__color__select">
-										<label for="pc-16">
+										<label>
 											<input type="radio" id="pc-16" />
 										</label>
-										<label
-											className="active black"
-											for="pc-17"
-										>
+										<label className="active black">
 											<input type="radio" id="pc-17" />
 										</label>
-										<label className="grey" for="pc-18">
+										<label className="grey">
 											<input type="radio" id="pc-18" />
 										</label>
 									</div>
@@ -688,14 +587,17 @@ function Home() {
 						<div className="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
 							<div className="product__item">
 								<div
-									className="product__item__pic set-bg"
-									data-setbg="img/product/product-7.jpg"
+									className="product__item__pic"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/product/product-7.jpg)",
+									}}
 								>
 									<ul className="product__hover">
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/heart.png"
+													src="src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
@@ -703,7 +605,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/compare.png"
+													src="src/assets/img/icon/compare.png"
 													alt=""
 												/>{" "}
 												<span>Compare</span>
@@ -712,7 +614,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/search.png"
+													src="src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>
@@ -733,16 +635,13 @@ function Home() {
 									</div>
 									<h5>$49.66</h5>
 									<div className="product__color__select">
-										<label for="pc-19">
+										<label>
 											<input type="radio" id="pc-19" />
 										</label>
-										<label
-											className="active black"
-											for="pc-20"
-										>
+										<label className="active black">
 											<input type="radio" id="pc-20" />
 										</label>
-										<label className="grey" for="pc-21">
+										<label className="grey">
 											<input type="radio" id="pc-21" />
 										</label>
 									</div>
@@ -752,14 +651,17 @@ function Home() {
 						<div className="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
 							<div className="product__item">
 								<div
-									className="product__item__pic set-bg"
-									data-setbg="img/product/product-8.jpg"
+									className="product__item__pic"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/product/product-8.jpg)",
+									}}
 								>
 									<ul className="product__hover">
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/heart.png"
+													src="src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
@@ -767,7 +669,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/compare.png"
+													src="src/assets/img/icon/compare.png"
 													alt=""
 												/>{" "}
 												<span>Compare</span>
@@ -776,7 +678,7 @@ function Home() {
 										<li>
 											<a href="#">
 												<img
-													src="img/icon/search.png"
+													src="src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>
@@ -797,16 +699,13 @@ function Home() {
 									</div>
 									<h5>$26.28</h5>
 									<div className="product__color__select">
-										<label for="pc-22">
+										<label>
 											<input type="radio" id="pc-22" />
 										</label>
-										<label
-											className="active black"
-											for="pc-23"
-										>
+										<label className="active black">
 											<input type="radio" id="pc-23" />
 										</label>
-										<label className="grey" for="pc-24">
+										<label className="grey">
 											<input type="radio" id="pc-24" />
 										</label>
 									</div>
@@ -833,7 +732,10 @@ function Home() {
 						</div>
 						<div className="col-lg-4">
 							<div className="categories__hot__deal">
-								<img src="img/product-sale.png" alt="" />
+								<img
+									src="src/assets/img/product-sale.png"
+									alt=""
+								/>
 								<div className="hot__deal__sticker">
 									<span>Sale Of</span>
 									<h5>$29.99</h5>
@@ -882,28 +784,46 @@ function Home() {
 						<div className="col-lg-8">
 							<div className="instagram__pic">
 								<div
-									className="instagram__pic__item set-bg"
-									data-setbg="img/instagram/instagram-1.jpg"
+									className="instagram__pic__item"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/instagram/instagram-1.jpg)",
+									}}
 								></div>
 								<div
-									className="instagram__pic__item set-bg"
-									data-setbg="img/instagram/instagram-2.jpg"
+									className="instagram__pic__item"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/instagram/instagram-2.jpg)",
+									}}
 								></div>
 								<div
-									className="instagram__pic__item set-bg"
-									data-setbg="img/instagram/instagram-3.jpg"
+									className="instagram__pic__item"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/instagram/instagram-3.jpg)",
+									}}
 								></div>
 								<div
-									className="instagram__pic__item set-bg"
-									data-setbg="img/instagram/instagram-4.jpg"
+									className="instagram__pic__item"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/instagram/instagram-4.jpg)",
+									}}
 								></div>
 								<div
-									className="instagram__pic__item set-bg"
-									data-setbg="img/instagram/instagram-5.jpg"
+									className="instagram__pic__item"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/instagram/instagram-5.jpg)",
+									}}
 								></div>
 								<div
-									className="instagram__pic__item set-bg"
-									data-setbg="img/instagram/instagram-6.jpg"
+									className="instagram__pic__item"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/instagram/instagram-6.jpg)",
+									}}
 								></div>
 							</div>
 						</div>
@@ -938,13 +858,16 @@ function Home() {
 						<div className="col-lg-4 col-md-6 col-sm-6">
 							<div className="blog__item">
 								<div
-									className="blog__item__pic set-bg"
-									data-setbg="img/blog/blog-1.jpg"
+									className="blog__item__pic"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/blog/blog-1.jpg)",
+									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="img/icon/calendar.png"
+											src="src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										16 February 2020
@@ -959,13 +882,16 @@ function Home() {
 						<div className="col-lg-4 col-md-6 col-sm-6">
 							<div className="blog__item">
 								<div
-									className="blog__item__pic set-bg"
-									data-setbg="img/blog/blog-2.jpg"
+									className="blog__item__pic"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/blog/blog-2.jpg)",
+									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="img/icon/calendar.png"
+											src="src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										21 February 2020
@@ -978,13 +904,16 @@ function Home() {
 						<div className="col-lg-4 col-md-6 col-sm-6">
 							<div className="blog__item">
 								<div
-									className="blog__item__pic set-bg"
-									data-setbg="img/blog/blog-3.jpg"
+									className="blog__item__pic"
+									style={{
+										backgroundImage:
+											"url(src/assets/img/blog/blog-3.jpg)",
+									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="img/icon/calendar.png"
+											src="src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										28 February 2020
@@ -999,114 +928,7 @@ function Home() {
 			</section>
 			{/* Latest Blog Section End */}
 
-			{/* Footer Section Begin */}
-			<footer className="footer">
-				<div className="container">
-					<div className="row">
-						<div className="col-lg-3 col-md-6 col-sm-6">
-							<div className="footer__about">
-								<div className="footer__logo">
-									<a href="#">
-										<img src="img/footer-logo.png" alt="" />
-									</a>
-								</div>
-								<p>
-									The customer is at the heart of our unique
-									business model, which includes design.
-								</p>
-								<a href="#">
-									<img src="img/payment.png" alt="" />
-								</a>
-							</div>
-						</div>
-						<div className="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-							<div className="footer__widget">
-								<h6>Shopping</h6>
-								<ul>
-									<li>
-										<a href="#">Clothing Store</a>
-									</li>
-									<li>
-										<a href="#">Trending Shoes</a>
-									</li>
-									<li>
-										<a href="#">Accessories</a>
-									</li>
-									<li>
-										<a href="#">Sale</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div className="col-lg-2 col-md-3 col-sm-6">
-							<div className="footer__widget">
-								<h6>Shopping</h6>
-								<ul>
-									<li>
-										<a href="#">Contact Us</a>
-									</li>
-									<li>
-										<a href="#">Payment Methods</a>
-									</li>
-									<li>
-										<a href="#">Delivary</a>
-									</li>
-									<li>
-										<a href="#">Return & Exchanges</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div className="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
-							<div className="footer__widget">
-								<h6>NewLetter</h6>
-								<div className="footer__newslatter">
-									<p>
-										Be the first to know about new arrivals,
-										look books, sales & promos!
-									</p>
-									<form action="#">
-										<input
-											type="text"
-											placeholder="Your email"
-										/>
-										<button type="submit">
-											<span className="icon_mail_alt"></span>
-										</button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div className="row">
-						<div className="col-lg-12 text-center">
-							<div className="footer__copyright__text">
-								<p>
-									Copyright ©
-									<script>
-										document.write(new
-										Date().getFullYear());
-									</script>
-									2020 All rights reserved | This template is
-									made with{" "}
-									<i
-										className="fa fa-heart-o"
-										aria-hidden="true"
-									></i>{" "}
-									by{" "}
-									<a
-										href="https://colorlib.com"
-										target="_blank"
-									>
-										Colorlib
-									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-			{/* Footer Section End */}
+			<Footer />
 
 			{/* Search Begin */}
 			<div className="search-model">
@@ -1122,18 +944,6 @@ function Home() {
 				</div>
 			</div>
 			{/* Search End */}
-
-			{/* Js Plugins */}
-			<script src="js/jquery-3.3.1.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script src="js/jquery.nice-select.min.js"></script>
-			<script src="js/jquery.nicescroll.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>
-			<script src="js/jquery.countdown.min.js"></script>
-			<script src="js/jquery.slicknav.js"></script>
-			<script src="js/mixitup.min.js"></script>
-			<script src="js/owl.carousel.min.js"></script>
-			<script src="js/main.js"></script>
 		</>
 	);
 }

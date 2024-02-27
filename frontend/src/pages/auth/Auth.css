@@ -7,5 +7,5 @@ form {
 }
 
 form * {
-	@apply font-Pop-sans text-white tracking-[0.5px] outline-none border-none;
+	@apply text-white tracking-[0.5px] outline-none border-none;
 }

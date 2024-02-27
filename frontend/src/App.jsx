@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Home } from "./pages/index.js";
-import { Loader } from "./components/index.js";
+import { Home } from "./pages/";
+import { Loader } from "./components/";
 
 function App() {
 	return (
@@ -10,7 +10,7 @@ function App() {
 			<ToastContainer />
 			<Loader />
 			<Home />
-			<main className="py-3">
+			<main>
 				<Outlet />
 			</main>
 		</>
