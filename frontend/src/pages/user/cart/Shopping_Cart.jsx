@@ -41,7 +41,7 @@ function Shopping_Cart() {
                                 <tr>
                                     <td class="product__cart__item">
                                         <div class="product__cart__item__pic">
-                                            <img src="img/shopping-cart/cart-1.jpg" alt=""/>
+                                            <img src="src/assets/img/shopping-cart/cart-1.jpg" alt=""/>
                                         </div>
                                         <div class="product__cart__item__text">
                                             <h6>T-shirt Contrast Pocket</h6>
@@ -61,7 +61,7 @@ function Shopping_Cart() {
                                 <tr>
                                     <td class="product__cart__item">
                                         <div class="product__cart__item__pic">
-                                            <img src="img/shopping-cart/cart-2.jpg" alt=""/>
+                                            <img src="src/assets/img/shopping-cart/cart-2.jpg" alt=""/>
                                         </div>
                                         <div class="product__cart__item__text">
                                             <h6>Diagonal Textured Cap</h6>
@@ -81,7 +81,7 @@ function Shopping_Cart() {
                                 <tr>
                                     <td class="product__cart__item">
                                         <div class="product__cart__item__pic">
-                                            <img src="img/shopping-cart/cart-3.jpg" alt=""/>
+                                            <img src="src/assets/img/shopping-cart/cart-3.jpg" alt=""/>
                                         </div>
                                         <div class="product__cart__item__text">
                                             <h6>Basic Flowing Scarf</h6>
@@ -101,7 +101,7 @@ function Shopping_Cart() {
                                 <tr>
                                     <td class="product__cart__item">
                                         <div class="product__cart__item__pic">
-                                            <img src="img/shopping-cart/cart-4.jpg" alt=""/>
+                                            <img src="src/assets/img/shopping-cart/cart-4.jpg" alt=""/>
                                         </div>
                                         <div class="product__cart__item__text">
                                             <h6>Basic Flowing Scarf</h6>
