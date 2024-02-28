@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Navbar } from "../../components/";
+import { Countdown, Footer, Navbar } from "../../components/";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -746,27 +746,7 @@ function Home() {
 							<div className="categories__deal__countdown">
 								<span>Deal Of The Week</span>
 								<h2>Multi-pocket Chest Bag Black</h2>
-								<div
-									className="categories__deal__countdown__timer"
-									id="countdown"
-								>
-									<div className="cd-item">
-										<span>00</span>
-										<p>Days</p>
-									</div>
-									<div className="cd-item">
-										<span>00</span>
-										<p>Hours</p>
-									</div>
-									<div className="cd-item">
-										<span>00</span>
-										<p>Minutes</p>
-									</div>
-									<div className="cd-item">
-										<span>00</span>
-										<p>Seconds</p>
-									</div>
-								</div>
+								<Countdown targetDate={"2024/03/02"} />
 								<a href="#" className="primary-btn">
 									Shop now
 								</a>
@@ -929,21 +909,6 @@ function Home() {
 			{/* Latest Blog Section End */}
 
 			<Footer />
-
-			{/* Search Begin */}
-			<div className="search-model">
-				<div className="h-100 d-flex align-items-center justify-content-center">
-					<div className="search-close-switch">+</div>
-					<form className="search-model-form">
-						<input
-							type="text"
-							id="search-input"
-							placeholder="Search here....."
-						/>
-					</form>
-				</div>
-			</div>
-			{/* Search End */}
 		</>
 	);
 }

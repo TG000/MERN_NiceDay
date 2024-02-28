@@ -1,7 +1,54 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { useLoginMutation } from "../../redux/api/userApiSlice";
 import "./Navbar.css";
 
 const Navbar = () => {
+	const { userInfo } = useSelector((state) => state.auth);
+
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
+
+	const [logoutApiCall] = useLoginMutation();
+
+	const logoutHandler = async () => {
+		try {
+			await logoutApiCall().unwrap();
+			dispatch(logout());
+			navigate("/login");
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
+	const [searchOpen, setSearchOpen] = useState(false);
+
+	// $(".search-switch").on("click", function () {
+	// 	$(".search-model").fadeIn(400);
+	// });
+
+	// $(".search-close-switch").on("click", function () {
+	// 	$(".search-model").fadeOut(400, function () {
+	// 		$("#search-input").val("");
+	// 	});
+	// });
+
+	const toggleSearch = () => {
+		setSearchOpen(!searchOpen);
+		handleSearchState();
+	};
+
+	const handleSearchState = () => {
+		if (searchOpen == true) {
+			$(".search-model").fadeOut(400, function () {
+				$("#search-input").val("");
+			});
+		} else {
+			$(".search-model").fadeIn(400);
+		}
+	};
+
 	return (
 		<>
 			{/* Offcanvas Menu Begin */}
@@ -14,7 +61,10 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div className="offcanvas__nav__option">
-					<a href="#" className="search-switch">
+					<a
+						className="search-switch cursor-pointer"
+						onClick={toggleSearch}
+					>
 						<img src="src/assets/img/icon/search.png" alt="" />
 					</a>
 					<a href="#">
@@ -140,6 +190,23 @@ const Navbar = () => {
 				</div>
 			</header>
 			{/* Header Section End */}
+
+			{/* Search Begin */}
+			<div className="search-model">
+				<div className="h-100 d-flex align-items-center justify-content-center">
+					<div className="search-close-switch" onClick={toggleSearch}>
+						+
+					</div>
+					<form className="search-model-form">
+						<input
+							type="text"
+							id="search-input"
+							placeholder="Search here....."
+						/>
+					</form>
+				</div>
+			</div>
+			{/* Search End */}
 		</>
 	);
 };
