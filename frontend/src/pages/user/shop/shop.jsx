@@ -1,6 +1,24 @@
+import React from "react";
+import { Footer, Navbar } from "../../../components/";
+
+// Css import
+import "../../assets/css/bootstrap.min.css";
+import "../../assets/css/elegant-icons.css";
+import "../../assets/css/font-awesome.min.css";
+import "../../assets/css/magnific-popup.css";
+import "../../assets/css/nice-select.css";
+import "../../assets/css/magnific-popup.css";
+import "../../assets/css/slicknav.min.css";
+import "../../assets/css/style.css";
+
+// Js import
+import "../../assets/js/bootstrap.min.js";
+import "../../assets/js/main.js";
+
 function Shop() {
 	return (
 		<>
+			<Navbar />
 			{/** Breadcrumb Section Begin */}
 			<section class="breadcrumb-option">
 				<div class="container">
@@ -450,14 +468,17 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-2.jpg"
+											class="product__item__pic "
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-2.jpg",
+											}}
 										>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -465,7 +486,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -474,7 +495,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -523,15 +544,18 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item sale">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-3.jpg"
+											class="product__item__pic "
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-3.jpg",
+											}}
 										>
 											<span class="label">Sale</span>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -539,7 +563,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -548,7 +572,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -597,14 +621,17 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-4.jpg"
+											class="product__item__pic "
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-4.jpg",
+											}}
 										>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -612,7 +639,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -621,7 +648,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -670,15 +697,18 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item sale">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-6.jpg"
+											class="product__item__pic "
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-6.jpg",
+											}}
 										>
 											<span class="label">Sale</span>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -686,7 +716,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -695,7 +725,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -744,14 +774,17 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-7.jpg"
+											class="product__item__pic "
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-7.jpg",
+											}}
 										>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -759,7 +792,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -768,7 +801,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -817,14 +850,17 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-8.jpg"
+											class="product__item__pic "
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-8.jpg",
+											}}
 										>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -832,7 +868,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -841,7 +877,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -890,14 +926,17 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-9.jpg"
+											class="product__item__pic "
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-9.jpg",
+											}}
 										>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -905,7 +944,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -914,7 +953,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -963,15 +1002,18 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item sale">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-10.jpg"
+											class="product__item__pic "
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-10.jpg",
+											}}
 										>
 											<span class="label">Sale</span>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -979,7 +1021,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -988,7 +1030,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -1037,14 +1079,17 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-11.jpg"
+											class="product__item__pic"
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-11.jpg",
+											}}
 										>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -1052,7 +1097,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -1061,7 +1106,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -1110,15 +1155,18 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item sale">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-12.jpg"
+											class="product__item__pic "
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-12.jpg",
+											}}
 										>
 											<span class="label">Sale</span>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -1126,7 +1174,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -1135,7 +1183,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -1184,14 +1232,17 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-13.jpg"
+											class="product__item__pic "
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-13.jpg",
+											}}
 										>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -1199,7 +1250,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -1208,7 +1259,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -1257,14 +1308,17 @@ function Shop() {
 								<div class="col-lg-4 col-md-6 col-sm-6">
 									<div class="product__item">
 										<div
-											class="product__item__pic set-bg"
-											data-setbg="img/product/product-14.jpg"
+											class="product__item__pic"
+											style={{
+												backgroundImage:
+													"url(src/assets/img/product/product-14.jpg",
+											}}
 										>
 											<ul class="product__hover">
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/heart.png"
+															src="src/assets/img/icon/heart.png"
 															alt=""
 														/>
 													</a>
@@ -1272,7 +1326,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/compare.png"
+															src="src/assets/img/icon/compare.png"
 															alt=""
 														/>{" "}
 														<span>Compare</span>
@@ -1281,7 +1335,7 @@ function Shop() {
 												<li>
 													<a href="#">
 														<img
-															src="img/icon/search.png"
+															src="src/assets/img/icon/search.png"
 															alt=""
 														/>
 													</a>
@@ -1346,16 +1400,7 @@ function Shop() {
 				</div>
 			</section>
 			{/** Shop Section End */}
-			<script src="js/jquery-3.3.1.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script src="js/jquery.nice-select.min.js"></script>
-			<script src="js/jquery.nicescroll.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>
-			<script src="js/jquery.countdown.min.js"></script>
-			<script src="js/jquery.slicknav.js"></script>
-			<script src="js/mixitup.min.js"></script>
-			<script src="js/owl.carousel.min.js"></script>
-			<script src="js/main.js"></script>
+			<Footer />
 		</>
 	);
 }
