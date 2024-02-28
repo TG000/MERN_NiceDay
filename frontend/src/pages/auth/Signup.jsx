@@ -1,9 +1,36 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useSignupMutation } from "../../redux/api/userApiSlice";
+import { setCredentials } from "../../redux/features/auth/authSlice";
+import { toast } from "react-toastify";
 import "./Auth.css";
 import "../../index.css";
 
 const Signup = () => {
+	const [username, setUsername] = useState("");
+	const [email, setEmail] = useState("");
+	const [phoneNumber, setPhoneNumber] = useState("");
+	const [password, setPassword] = useState("");
+	const [confirmPass, setConfirmPass] = useState("");
+
+	const dispatch = useDispatch();
+	const navigate = useNavigate();
+
+	const [signup, { isLoading }] = useSignupMutation();
+
+	const { userInfo } = useSelector((state) => state.auth);
+
+	const { search } = useLocation();
+	const sp = new URLSearchParams(search);
+	const redirect = sp.get("redirect") || "/";
+
+	useEffect(() => {
+		if (userInfo) {
+			navigate(redirect);
+		}
+	}, [navigate, redirect, userInfo]);
+
 	useEffect(() => {
 		/*==================================================================
         [ Focus Contact2 ]*/
@@ -93,12 +120,14 @@ const Signup = () => {
 
 						<div
 							className="wrap-input100 validate-input"
-							data-validate="Valid username is required!"
+							data-validate="Username is required!"
 						>
 							<input
 								className="input100"
 								type="text"
 								name="username"
+								value={username}
+								onChange={(e) => setUsername(e.target.value)}
 							/>
 							<span className="focus-input100"></span>
 							<span className="label-input100">Username</span>
@@ -112,6 +141,8 @@ const Signup = () => {
 								className="input100"
 								type="text"
 								name="email"
+								value={email}
+								onChange={(e) => setEmail(e.target.value)}
 							/>
 							<span className="focus-input100"></span>
 							<span className="label-input100">Email</span>
@@ -119,12 +150,29 @@ const Signup = () => {
 
 						<div
 							className="wrap-input100 validate-input"
-							data-validate="Password is required"
+							data-validate="Phone number is required!"
+						>
+							<input
+								className="input100"
+								type="text"
+								name="phone_number"
+								value={phoneNumber}
+								onChange={(e) => setPhoneNumber(e.target.value)}
+							/>
+							<span className="focus-input100"></span>
+							<span className="label-input100">Phone Number</span>
+						</div>
+
+						<div
+							className="wrap-input100 validate-input"
+							data-validate="Password is required!"
 						>
 							<input
 								className="input100"
 								type="password"
-								name="pass"
+								name="password"
+								value={password}
+								onChange={(e) => setPassword(e.target.value)}
 							/>
 							<span className="focus-input100"></span>
 							<span className="label-input100">Password</span>
@@ -138,6 +186,8 @@ const Signup = () => {
 								className="input100"
 								type="password"
 								name="confirm_pass"
+								value={confirmPass}
+								onChange={(e) => setConfirmPass(e.target.value)}
 							/>
 							<span className="focus-input100"></span>
 							<span className="label-input100">
@@ -146,17 +196,25 @@ const Signup = () => {
 						</div>
 
 						<div className="container-login100-form-btn mt-3">
-							<button className="login100-form-btn">
-								Sign Up
+							<button
+								className="login100-form-btn"
+								disabled={isLoading}
+								type="submit"
+							>
+								{isLoading ? "Signing Up" : "Sign Up"}
 							</button>
 						</div>
 
 						<div className="text-center py-3 mt-12">
 							<span className="txt2">
-								Already have an account?{" "}
+								Don't have an account?{" "}
 							</span>
 							<Link
-								to="/login"
+								to={
+									redirect
+										? `/login?redirect=${redirect}`
+										: "/login"
+								}
 								className="txt2 text-blue-500 hover:text-blue-950"
 							>
 								Login
