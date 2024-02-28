@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { useLoginMutation } from "../../redux/api/userApiSlice";
+import { Link, useNavigate } from "react-router-dom";
+import { useLogoutMutation } from "../../redux/api/userApiSlice";
+import { logout } from "../../redux/features/auth/authSlice";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -10,7 +11,7 @@ const Navbar = () => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
-	const [logoutApiCall] = useLoginMutation();
+	const [logoutApiCall] = useLogoutMutation();
 
 	const logoutHandler = async () => {
 		try {
@@ -55,10 +56,19 @@ const Navbar = () => {
 			<div className="offcanvas-menu-overlay"></div>
 			<div className="offcanvas-menu-wrapper">
 				<div className="offcanvas__option">
-					<div className="offcanvas__links">
-						<a href="#">Sign in</a>
-						<a href="#">Sign up</a>
-					</div>
+					{userInfo ? (
+						<div className="offcanvas__links">
+							<Link to="/profile">Profile</Link>
+							<a href="#" onClick={logoutHandler}>
+								Logout
+							</a>
+						</div>
+					) : (
+						<div className="offcanvas__links">
+							<Link to="/login">Login</Link>
+							<Link to="/signup">Signup</Link>
+						</div>
+					)}
 				</div>
 				<div className="offcanvas__nav__option">
 					<a
@@ -98,10 +108,19 @@ const Navbar = () => {
 							</div>
 							<div className="col-lg-6 col-md-5">
 								<div className="header__top__right">
-									<div className="header__top__links">
-										<a href="#">Sign in</a>
-										<a href="#">Sign up</a>
-									</div>
+									{userInfo ? (
+										<div className="header__top__links">
+											<Link to="/profile">Profile</Link>
+											<a href="#" onClick={logoutHandler}>
+												Logout
+											</a>
+										</div>
+									) : (
+										<div className="header__top__links">
+											<Link to="/login">Login</Link>
+											<Link to="/signup">Signup</Link>
+										</div>
+									)}
 								</div>
 							</div>
 						</div>
