@@ -322,8 +322,12 @@ function About() {
 				</div>
 			</section>
 			{/**Client Section End */}
-
-			<Footer />
+			<Footer/>
 		</>
 	);
 }
+
+
+
+export default About
+

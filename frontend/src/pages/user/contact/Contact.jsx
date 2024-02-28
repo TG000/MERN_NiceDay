@@ -101,8 +101,11 @@ function Contact() {
 				</div>
 			</section>
 			{/* Contact Section End */}
-
-			<Footer />
+			<Footer/>
 		</>
 	);
 }
+
+
+export default Contact
+
