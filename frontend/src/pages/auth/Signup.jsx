@@ -5,7 +5,7 @@ import { useSignupMutation } from "../../redux/api/userApiSlice";
 import { setCredentials } from "../../redux/features/auth/authSlice";
 import { toast } from "react-toastify";
 import "./Auth.css";
-import "../../index.css";
+import { Loader } from "../../components";
 
 const Signup = () => {
 	const [username, setUsername] = useState("");
@@ -103,135 +103,151 @@ const Signup = () => {
 	});
 
 	return (
-		<div className="limiter">
-			<div className="container-login100">
-				<div className="wrap-login100">
-					<form className="login100-form validate-form flex flex-col justify-center">
-						<Link
-							to="/"
-							className="login100-form-title py-3 mb-5 flex justify-center"
-						>
-							<img src="src/assets/img/logo_black.png" alt="" />
-						</Link>
-
-						<span className="login100-form-title p-b-43">
-							Create an account.
-						</span>
-
-						<div
-							className="wrap-input100 validate-input"
-							data-validate="Username is required!"
-						>
-							<input
-								className="input100"
-								type="text"
-								name="username"
-								value={username}
-								onChange={(e) => setUsername(e.target.value)}
-							/>
-							<span className="focus-input100"></span>
-							<span className="label-input100">Username</span>
-						</div>
-
-						<div
-							className="wrap-input100 validate-input"
-							data-validate="Valid email is required: ex@abc.xyz"
-						>
-							<input
-								className="input100"
-								type="text"
-								name="email"
-								value={email}
-								onChange={(e) => setEmail(e.target.value)}
-							/>
-							<span className="focus-input100"></span>
-							<span className="label-input100">Email</span>
-						</div>
-
-						<div
-							className="wrap-input100 validate-input"
-							data-validate="Phone number is required!"
-						>
-							<input
-								className="input100"
-								type="text"
-								name="phone_number"
-								value={phoneNumber}
-								onChange={(e) => setPhoneNumber(e.target.value)}
-							/>
-							<span className="focus-input100"></span>
-							<span className="label-input100">Phone Number</span>
-						</div>
-
-						<div
-							className="wrap-input100 validate-input"
-							data-validate="Password is required!"
-						>
-							<input
-								className="input100"
-								type="password"
-								name="password"
-								value={password}
-								onChange={(e) => setPassword(e.target.value)}
-							/>
-							<span className="focus-input100"></span>
-							<span className="label-input100">Password</span>
-						</div>
-
-						<div
-							className="wrap-input100 validate-input"
-							data-validate="Password and confirm password must match!"
-						>
-							<input
-								className="input100"
-								type="password"
-								name="confirm_pass"
-								value={confirmPass}
-								onChange={(e) => setConfirmPass(e.target.value)}
-							/>
-							<span className="focus-input100"></span>
-							<span className="label-input100">
-								Confirm Password
-							</span>
-						</div>
-
-						<div className="container-login100-form-btn mt-3">
-							<button
-								className="login100-form-btn"
-								disabled={isLoading}
-								type="submit"
-							>
-								{isLoading ? "Signing Up" : "Sign Up"}
-							</button>
-						</div>
-
-						<div className="text-center py-3 mt-12">
-							<span className="txt2">
-								Don't have an account?{" "}
-							</span>
+		<>
+			<Loader />
+			<div className="limiter">
+				<div className="container-login100">
+					<div className="wrap-login100">
+						<form className="login100-form validate-form flex-c flex-col">
 							<Link
-								to={
-									redirect
-										? `/login?redirect=${redirect}`
-										: "/login"
-								}
-								className="txt2 text-blue-500 hover:text-blue-950"
+								to="/"
+								className="login100-form-title p-t-12 p-b-12 m-b-20 flex-c"
 							>
-								Login
+								<img
+									src="src/assets/img/logo_black.png"
+									alt=""
+								/>
 							</Link>
-						</div>
-					</form>
 
-					<div
-						className="login100-more"
-						style={{
-							backgroundImage:
-								"url('src/assets/img/hero/hero-2.jpg')",
-						}}
-					></div>
+							<span className="login100-form-title p-b-43">
+								Create an account.
+							</span>
+
+							<div
+								className="wrap-input100 validate-input"
+								data-validate="Username is required!"
+							>
+								<input
+									className="input100"
+									type="text"
+									name="username"
+									value={username}
+									onChange={(e) =>
+										setUsername(e.target.value)
+									}
+								/>
+								<span className="focus-input100"></span>
+								<span className="label-input100">Username</span>
+							</div>
+
+							<div
+								className="wrap-input100 validate-input"
+								data-validate="Valid email is required: ex@abc.xyz"
+							>
+								<input
+									className="input100"
+									type="text"
+									name="email"
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
+								/>
+								<span className="focus-input100"></span>
+								<span className="label-input100">Email</span>
+							</div>
+
+							<div
+								className="wrap-input100 validate-input"
+								data-validate="Phone number is required!"
+							>
+								<input
+									className="input100"
+									type="text"
+									name="phone_number"
+									value={phoneNumber}
+									onChange={(e) =>
+										setPhoneNumber(e.target.value)
+									}
+								/>
+								<span className="focus-input100"></span>
+								<span className="label-input100">
+									Phone Number
+								</span>
+							</div>
+
+							<div
+								className="wrap-input100 validate-input"
+								data-validate="Password is required!"
+							>
+								<input
+									className="input100"
+									type="password"
+									name="password"
+									value={password}
+									onChange={(e) =>
+										setPassword(e.target.value)
+									}
+								/>
+								<span className="focus-input100"></span>
+								<span className="label-input100">Password</span>
+							</div>
+
+							<div
+								className="wrap-input100 validate-input"
+								data-validate="Password and confirm password must match!"
+							>
+								<input
+									className="input100"
+									type="password"
+									name="confirm_pass"
+									value={confirmPass}
+									onChange={(e) =>
+										setConfirmPass(e.target.value)
+									}
+								/>
+								<span className="focus-input100"></span>
+								<span className="label-input100">
+									Confirm Password
+								</span>
+							</div>
+
+							<div className="container-login100-form-btn m-t-12">
+								<button
+									className="login100-form-btn"
+									disabled={isLoading}
+									type="submit"
+								>
+									{isLoading ? "Signing Up" : "Sign Up"}
+								</button>
+							</div>
+
+							<div className="text-center p-t-12 p-b-12 m-t-48">
+								<span className="txt2">
+									Don't have an account?{" "}
+								</span>
+								<Link
+									to={
+										redirect
+											? `/login?redirect=${redirect}`
+											: "/login"
+									}
+									className="txt2 text-blue-500 hover:text-blue-950"
+								>
+									Login
+								</Link>
+							</div>
+						</form>
+
+						<div
+							className="login100-more"
+							style={{
+								backgroundImage:
+									"url('src/assets/img/hero/hero-2.jpg')",
+							}}
+						></div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
