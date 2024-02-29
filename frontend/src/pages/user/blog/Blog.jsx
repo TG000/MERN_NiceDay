@@ -3,7 +3,6 @@ import React from "react";
 import { Footer, Loader, Navbar } from "../../../components/";
 
 // Css import
-import "../../../assets/css/bootstrap.min.css";
 import "../../../assets/css/elegant-icons.css";
 import "../../../assets/css/font-awesome.min.css";
 import "../../../assets/css/magnific-popup.css";
@@ -13,7 +12,6 @@ import "../../../assets/css/slicknav.min.css";
 import "../../../assets/css/style.css";
 
 // Js import
-import "../../../assets/js/bootstrap.min.js";
 import "../../../assets/js/main.js";
 
 function Blog() {
@@ -27,8 +25,8 @@ function Blog() {
 			<section
 				className="breadcrumb-blog "
 				style={{
-					backgroundImage:
-						"url(src/assets/img/breadcrumb-bg.jpg"}}
+					backgroundImage: "url(src/assets/img/breadcrumb-bg.jpg",
+				}}
 			>
 				<div className="container">
 					<div className="row">
@@ -50,7 +48,9 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-1.jpg"}}></div>
+											"url(src/assets/img/blog/blog-1.jpg",
+									}}
+								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
@@ -72,7 +72,8 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-2.jpg"}}
+											"url(src/assets/img/blog/blog-2.jpg",
+									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
@@ -90,9 +91,11 @@ function Blog() {
 						<div className="col-lg-4 col-md-6 col-sm-6">
 							<div className="blog__item">
 								<div
-									className="blog__item__pic "style={{
+									className="blog__item__pic "
+									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-3.jpg"}}
+											"url(src/assets/img/blog/blog-3.jpg",
+									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
@@ -110,9 +113,11 @@ function Blog() {
 						<div className="col-lg-4 col-md-6 col-sm-6">
 							<div className="blog__item">
 								<div
-									className="blog__item__pic "style={{
+									className="blog__item__pic "
+									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-4.jpg"}}
+											"url(src/assets/img/blog/blog-4.jpg",
+									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
@@ -133,7 +138,8 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-5.jpg"}}
+											"url(src/assets/img/blog/blog-5.jpg",
+									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
@@ -154,7 +160,8 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-6.jpg"}}
+											"url(src/assets/img/blog/blog-6.jpg",
+									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
@@ -177,7 +184,8 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-7.jpg"}}
+											"url(src/assets/img/blog/blog-7.jpg",
+									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
@@ -198,7 +206,8 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-8.jpg"}}
+											"url(src/assets/img/blog/blog-8.jpg",
+									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
@@ -219,7 +228,8 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-9.jpg"}}
+											"url(src/assets/img/blog/blog-9.jpg",
+									}}
 								></div>
 								<div className="blog__item__text">
 									<span>

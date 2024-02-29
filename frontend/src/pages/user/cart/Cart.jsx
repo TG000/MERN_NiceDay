@@ -3,7 +3,6 @@ import React from "react";
 import { Footer, Loader, Navbar } from "../../../components/";
 
 // Css import
-import "../../../assets/css/bootstrap.min.css";
 import "../../../assets/css/elegant-icons.css";
 import "../../../assets/css/font-awesome.min.css";
 import "../../../assets/css/magnific-popup.css";
@@ -13,7 +12,6 @@ import "../../../assets/css/slicknav.min.css";
 import "../../../assets/css/style.css";
 
 // Js import
-import "../../../assets/js/bootstrap.min.js";
 import "../../../assets/js/main.js";
 
 function Cart() {
@@ -83,7 +81,9 @@ function Cart() {
 													</div>
 												</div>
 											</td>
-											<td className="cart__price">$ 30.00</td>
+											<td className="cart__price">
+												$ 30.00
+											</td>
 											<td className="cart__close">
 												<i className="fa fa-close"></i>
 											</td>
@@ -113,7 +113,9 @@ function Cart() {
 													</div>
 												</div>
 											</td>
-											<td className="cart__price">$ 32.50</td>
+											<td className="cart__price">
+												$ 32.50
+											</td>
 											<td className="cart__close">
 												<i className="fa fa-close"></i>
 											</td>
@@ -141,7 +143,9 @@ function Cart() {
 													</div>
 												</div>
 											</td>
-											<td className="cart__price">$ 47.00</td>
+											<td className="cart__price">
+												$ 47.00
+											</td>
 											<td className="cart__close">
 												<i className="fa fa-close"></i>
 											</td>
@@ -169,7 +173,9 @@ function Cart() {
 													</div>
 												</div>
 											</td>
-											<td className="cart__price">$ 30.00</td>
+											<td className="cart__price">
+												$ 30.00
+											</td>
 											<td className="cart__close">
 												<i className="fa fa-close"></i>
 											</td>
@@ -186,8 +192,8 @@ function Cart() {
 								<div className="col-lg-6 col-md-6 col-sm-6">
 									<div className="continue__btn update__btn">
 										<a href="#">
-											<i className="fa fa-spinner"></i> Update
-											cart
+											<i className="fa fa-spinner"></i>{" "}
+											Update cart
 										</a>
 									</div>
 								</div>

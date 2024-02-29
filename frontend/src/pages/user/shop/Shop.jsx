@@ -2,7 +2,6 @@ import React from "react";
 import { Footer, Loader, Navbar } from "../../../components/";
 
 // Css import
-import "../../../assets/css/bootstrap.min.css";
 import "../../../assets/css/elegant-icons.css";
 import "../../../assets/css/font-awesome.min.css";
 import "../../../assets/css/magnific-popup.css";
@@ -12,7 +11,6 @@ import "../../../assets/css/slicknav.min.css";
 import "../../../assets/css/style.css";
 
 // Js import
-import "../../../assets/js/bootstrap.min.js";
 import "../../../assets/js/main.js";
 
 function Shop() {

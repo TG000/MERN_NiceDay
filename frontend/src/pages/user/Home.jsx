@@ -3,18 +3,6 @@ import { Countdown, Footer, Loader, Navbar } from "../../components/";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-
-// Css import
-import "../../assets/css/elegant-icons.css";
-import "../../assets/css/font-awesome.min.css";
-import "../../assets/css/magnific-popup.css";
-import "../../assets/css/nice-select.css";
-import "../../assets/css/magnific-popup.css";
-import "../../assets/css/slicknav.min.css";
-import "../../assets/css/style.css";
-
-// Js import
-import "../../assets/js/main.js";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -217,7 +205,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										
+
 										<li>
 											<a href="#">
 												<img
@@ -241,7 +229,6 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$67.24</h5>
-									
 								</div>
 							</div>
 						</div>
@@ -263,7 +250,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										
+
 										<li>
 											<a href="#">
 												<img
@@ -287,7 +274,6 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$67.24</h5>
-									
 								</div>
 							</div>
 						</div>
@@ -310,7 +296,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										
+
 										<li>
 											<a href="#">
 												<img
@@ -334,7 +320,6 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$43.48</h5>
-									
 								</div>
 							</div>
 						</div>
@@ -356,7 +341,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										
+
 										<li>
 											<a href="#">
 												<img
@@ -380,7 +365,6 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$60.9</h5>
-									
 								</div>
 							</div>
 						</div>
@@ -402,7 +386,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										
+
 										<li>
 											<a href="#">
 												<img
@@ -426,7 +410,6 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$31.37</h5>
-									
 								</div>
 							</div>
 						</div>
@@ -449,7 +432,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										
+
 										<li>
 											<a href="#">
 												<img
@@ -473,7 +456,6 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$98.49</h5>
-									
 								</div>
 							</div>
 						</div>
@@ -495,7 +477,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										
+
 										<li>
 											<a href="#">
 												<img
@@ -519,7 +501,6 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$49.66</h5>
-									
 								</div>
 							</div>
 						</div>
@@ -541,7 +522,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										
+
 										<li>
 											<a href="#">
 												<img
@@ -565,7 +546,6 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$26.28</h5>
-									
 								</div>
 							</div>
 						</div>
