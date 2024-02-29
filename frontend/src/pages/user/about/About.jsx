@@ -198,7 +198,7 @@ function About() {
 					</div>
 					<div class="row">
 						{/**Each member card begin */}
-						<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="team__item">
 								<img
 									src="src/assets/img/about/team-1.jpg"
@@ -209,7 +209,7 @@ function About() {
 							</div>
 						</div>
 						{/**Each member card end */}
-						<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="team__item">
 								<img
 									src="src/assets/img/about/team-2.jpg"
@@ -219,7 +219,7 @@ function About() {
 								<span>C.E.O</span>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="team__item">
 								<img
 									src="src/assets/img/about/team-3.jpg"
@@ -229,7 +229,27 @@ function About() {
 								<span>Manager</span>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="team__item">
+								<img
+									src="src/assets/img/about/team-4.jpg"
+									alt=""
+								/>
+								<h4>Lucy Myers</h4>
+								<span>Delivery</span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="team__item">
+								<img
+									src="src/assets/img/about/team-4.jpg"
+									alt=""
+								/>
+								<h4>Lucy Myers</h4>
+								<span>Delivery</span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="team__item">
 								<img
 									src="src/assets/img/about/team-4.jpg"

@@ -84,8 +84,11 @@ const Signup = () => {
 				}
 			} else if (
 				$(input).attr("type") == "password" ||
-				$(input).attr("name") == "password"
+				$(input).attr("name") == "confirm_pass"
 			) {
+				if (password != confirmPass) {
+					return false;
+				}
 			} else {
 				if ($(input).val().trim() == "") {
 					return false;
@@ -109,23 +112,19 @@ const Signup = () => {
 	const submitHandler = async (e) => {
 		e.preventDefault();
 
-		if (password != confirmPass) {
-			toast.error("Confirm password and passwords don't match!");
-		} else {
-			try {
-				const res = await signup({
-					full_name,
-					email,
-					phone_number,
-					password,
-				}).unwrap();
-				dispatch(setCredentials({ ...res }));
-				navigate(redirect);
-				toast.success("Signed up successfully!");
-			} catch (error) {
-				console.log(error);
-				toast.error(error.data.message);
-			}
+		try {
+			const res = await signup({
+				full_name,
+				email,
+				phone_number,
+				password,
+			}).unwrap();
+			dispatch(setCredentials({ ...res }));
+			navigate(redirect);
+			toast.success("Signed up successfully!");
+		} catch (error) {
+			console.log(error);
+			toast.error(error.data.message);
 		}
 	};
 
