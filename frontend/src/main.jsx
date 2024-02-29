@@ -24,14 +24,20 @@ import {
 	Blog,
 	Post,
 	Profile,
+	UserList,
 } from "./pages/";
-import { UserRoute } from "./components/index.js";
+import { AdminRoute, UserRoute } from "./components/";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<App />}>
 			{/* Default */}
 			<Route path="/" element={<Home />} />
+
+			{/* Admin routes */}
+			<Route path="/admin" element={<AdminRoute />}>
+				<Route path="userlist" element={<UserList />} />
+			</Route>
 
 			{/* Logged In */}
 			<Route path="" element={<UserRoute />}>

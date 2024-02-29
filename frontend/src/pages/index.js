@@ -1,20 +1,23 @@
+// Admin pages
+import UserList from "./admin/UserList";
+
 // Auth pages
 import Login from "./auth/Login";
 import Signup from "./auth/Signup";
 
 // User pages
-import Home from "./user/Home";
-import Shop from "./user/shop/Shop";
-import Product from "./user/shop/Product";
-import Contact from "./user/contact/Contact";
-import Checkout from "./user/checkout/Checkout";
-import Cart from "./user/cart/Cart";
-import Blog from "./user/blog/Blog";
-import Post from "./user/blog/Post";
-import About from "./user/about/About";
+import Home from "./guest/Home";
+import Shop from "./shop/Shop";
+import Product from "./shop/Product";
+import Contact from "./guest/Contact";
+import Checkout from "./shop/Checkout";
+import Cart from "./shop/Cart";
+import Blog from "./blog/Blog";
+import Post from "./blog/Post";
+import About from "./guest/About";
 
 // Logged in pages
-import Profile from "./user/profile/Profile";
+import Profile from "./user/Profile";
 
 export {
 	Login,
@@ -29,4 +32,5 @@ export {
 	About,
 	Profile,
 	Checkout,
+	UserList,
 };
