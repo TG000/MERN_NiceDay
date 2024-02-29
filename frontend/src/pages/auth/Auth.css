@@ -7305,6 +7305,14 @@ input.input100 {
 	color: white;
 }
 
+.text-blue-500 {
+    color: rgb(59, 130, 246, 1);
+}
+
+.hover\:text-blue-950:hover {
+    color: rgb(23 37 84 1);
+}
+
 /* ------------------------------------ */
 .text-up {
 	text-transform: uppercase;

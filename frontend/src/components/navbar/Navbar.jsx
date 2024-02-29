@@ -1,15 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useLogoutMutation } from "../../redux/api/userApiSlice";
 import { logout } from "../../redux/features/auth/authSlice";
 import "./Navbar.css";
 
 const Navbar = () => {
 	const { userInfo } = useSelector((state) => state.auth);
+	const [searchOpen, setSearchOpen] = useState(false);
 
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
+	const location = useLocation();
 
 	const [logoutApiCall] = useLogoutMutation();
 
@@ -23,7 +25,15 @@ const Navbar = () => {
 		}
 	};
 
-	const [searchOpen, setSearchOpen] = useState(false);
+	const searchOpenHandler = () => {
+		$(".search-model").fadeIn(400);
+	};
+
+	const searchCloseHandler = () => {
+		$(".search-model").fadeOut(400, function () {
+			$("#search-input").val("");
+		});
+	};
 
 	// $(".search-switch").on("click", function () {
 	// 	$(".search-model").fadeIn(400);
@@ -34,21 +44,6 @@ const Navbar = () => {
 	// 		$("#search-input").val("");
 	// 	});
 	// });
-
-	const toggleSearch = () => {
-		setSearchOpen(!searchOpen);
-		handleSearchState();
-	};
-
-	const handleSearchState = () => {
-		if (searchOpen == true) {
-			$(".search-model").fadeOut(400, function () {
-				$("#search-input").val("");
-			});
-		} else {
-			$(".search-model").fadeIn(400);
-		}
-	};
 
 	return (
 		<>
@@ -71,19 +66,16 @@ const Navbar = () => {
 					)}
 				</div>
 				<div className="offcanvas__nav__option">
-					<a
-						className="search-switch cursor-pointer"
-						onClick={toggleSearch}
-					>
+					<a className="search-switch cursor-pointer">
 						<img src="src/assets/img/icon/search.png" alt="" />
 					</a>
 					<a href="#">
 						<img src="src/assets/img/icon/heart.png" alt="" />
 					</a>
-					<a href="#">
+					<Link to="/cart">
 						<img src="src/assets/img/icon/cart.png" alt="" />{" "}
 						<span>0</span>
-					</a>
+					</Link>
 					<div className="price">$0.00</div>
 				</div>
 				<div id="mobile-menu-wrap"></div>
@@ -141,13 +133,31 @@ const Navbar = () => {
 						<div className="col-lg-6 col-md-6">
 							<nav className="header__menu mobile-menu">
 								<ul>
-									<li className="active">
+									<li
+										className={
+											location.pathname === "/"
+												? "active"
+												: ""
+										}
+									>
 										<a href="/">Home</a>
 									</li>
-									<li>
+									<li
+										className={
+											location.pathname === "/about"
+												? "active"
+												: ""
+										}
+									>
 										<a href="/about">About</a>
 									</li>
-									<li>
+									<li
+										className={
+											location.pathname.includes("/shop")
+												? "active"
+												: ""
+										}
+									>
 										<a href="/shop">Shop</a>
 										<ul className="dropdown">
 											<li>
@@ -170,10 +180,22 @@ const Navbar = () => {
 											</li>
 										</ul>
 									</li>
-									<li>
+									<li
+										className={
+											location.pathname.includes("/blog")
+												? "active"
+												: ""
+										}
+									>
 										<a href="/blog">Blog</a>
 									</li>
-									<li>
+									<li
+										className={
+											location.pathname === "/contact"
+												? "active"
+												: ""
+										}
+									>
 										<a href="/contact">Contact</a>
 									</li>
 								</ul>
@@ -181,7 +203,11 @@ const Navbar = () => {
 						</div>
 						<div className="col-lg-3 col-md-3">
 							<div className="header__nav__option">
-								<a href="#" className="search-switch">
+								<a
+									className="search-switch"
+									style={{ cursor: "pointer" }}
+									onClick={searchOpenHandler}
+								>
 									<img
 										src="src/assets/img/icon/search.png"
 										alt=""
@@ -193,12 +219,12 @@ const Navbar = () => {
 										alt=""
 									/>
 								</a>
-								<a href="#">
+								<Link to="/cart">
 									<img
 										src="src/assets/img/icon/cart.png"
 										alt=""
 									/>
-								</a>
+								</Link>
 								<div className="price">0.00₫</div>
 							</div>
 						</div>
@@ -213,7 +239,10 @@ const Navbar = () => {
 			{/* Search Begin */}
 			<div className="search-model">
 				<div className="h-100 d-flex align-items-center justify-content-center">
-					<div className="search-close-switch" onClick={toggleSearch}>
+					<div
+						className="search-close-switch"
+						onClick={searchCloseHandler}
+					>
 						+
 					</div>
 					<form className="search-model-form">

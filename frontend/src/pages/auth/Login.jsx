@@ -5,7 +5,7 @@ import { useLoginMutation } from "../../redux/api/userApiSlice";
 import { setCredentials } from "../../redux/features/auth/authSlice";
 import { toast } from "react-toastify";
 import "./Auth.css";
-import "../../index.css";
+import { Loader } from "../../components/";
 
 const Login = () => {
 	const [email, setEmail] = useState("");
@@ -112,150 +112,159 @@ const Login = () => {
 	};
 
 	return (
-		<div className="limiter">
-			<div className="container-login100">
-				<div className="wrap-login100">
-					<form
-						onSubmit={submitHandler}
-						className="login100-form validate-form flex flex-col justify-center"
-					>
-						<Link
-							to="/"
-							className="login100-form-title py-3 mb-5 flex justify-center"
+		<>
+			<Loader />
+
+			<div className="limiter">
+				<div className="container-login100">
+					<div className="wrap-login100">
+						<form
+							onSubmit={submitHandler}
+							className="login100-form validate-form flex-c flex-col"
 						>
-							<img src="src/assets/img/logo_black.png" alt="" />
-						</Link>
-
-						<span className="login100-form-title p-b-43">
-							Login to continue.
-						</span>
-
-						<div
-							className="wrap-input100 validate-input"
-							data-validate="Valid email is required: ex@abc.xyz"
-						>
-							<input
-								className="input100"
-								type="text"
-								name="email"
-								value={email}
-								onChange={(e) => setEmail(e.target.value)}
-							/>
-							<span className="focus-input100"></span>
-							<span className="label-input100">Email</span>
-						</div>
-
-						<div
-							className="wrap-input100 validate-input"
-							data-validate="Password is required"
-						>
-							<input
-								className="input100"
-								type="password"
-								name="pass"
-								value={password}
-								onChange={(e) => setPassword(e.target.value)}
-							/>
-							<span className="focus-input100"></span>
-							<span className="label-input100">Password</span>
-						</div>
-
-						<div className="flex-sb-m w-full p-t-20 p-b-32">
-							<div className="contact100-form-checkbox">
-								<input
-									className="input-checkbox100"
-									id="ckb1"
-									type="checkbox"
-									name="remember-me"
+							<Link
+								to="/"
+								className="login100-form-title p-t-12 p-b-12 m-b-20 flex-c"
+							>
+								<img
+									src="src/assets/img/logo_black.png"
+									alt=""
 								/>
-								<label
-									className="label-checkbox100"
-									htmlFor="ckb1"
-								>
-									Remember me
-								</label>
+							</Link>
+
+							<span className="login100-form-title p-b-43">
+								Login to continue.
+							</span>
+
+							<div
+								className="wrap-input100 validate-input"
+								data-validate="Valid email is required: ex@abc.xyz"
+							>
+								<input
+									className="input100"
+									type="text"
+									name="email"
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
+								/>
+								<span className="focus-input100"></span>
+								<span className="label-input100">Email</span>
 							</div>
 
-							<div>
-								<a href="#" className="txt1">
-									Forgot Password?
+							<div
+								className="wrap-input100 validate-input"
+								data-validate="Password is required"
+							>
+								<input
+									className="input100"
+									type="password"
+									name="pass"
+									value={password}
+									onChange={(e) =>
+										setPassword(e.target.value)
+									}
+								/>
+								<span className="focus-input100"></span>
+								<span className="label-input100">Password</span>
+							</div>
+
+							<div className="flex-sb-m w-full p-t-20 p-b-32">
+								<div className="contact100-form-checkbox">
+									<input
+										className="input-checkbox100"
+										id="ckb1"
+										type="checkbox"
+										name="remember-me"
+									/>
+									<label
+										className="label-checkbox100"
+										htmlFor="ckb1"
+									>
+										Remember me
+									</label>
+								</div>
+
+								<div>
+									<a href="#" className="txt1">
+										Forgot Password?
+									</a>
+								</div>
+							</div>
+
+							<div className="container-login100-form-btn">
+								<button
+									className="login100-form-btn"
+									disabled={isLoading}
+									type="submit"
+								>
+									{isLoading ? "Logging In" : "Login"}
+								</button>
+							</div>
+
+							<div className="text-center p-t-46 p-b-20">
+								<span className="txt2">or sign up using</span>
+							</div>
+
+							<div className="login100-form-social flex-c-m">
+								<a
+									href="#"
+									className="login100-form-social-item flex-c-m bg3 m-r-5"
+								>
+									<i
+										className="fa fa-google"
+										aria-hidden="true"
+									></i>
+								</a>
+
+								<a
+									href="#"
+									className="login100-form-social-item flex-c-m bg1 m-r-5"
+								>
+									<i
+										className="fa fa-facebook-f"
+										aria-hidden="true"
+									></i>
+								</a>
+
+								<a
+									href="#"
+									className="login100-form-social-item flex-c-m bg2 m-r-5"
+								>
+									<i
+										className="fa fa-twitter"
+										aria-hidden="true"
+									></i>
 								</a>
 							</div>
-						</div>
 
-						<div className="container-login100-form-btn">
-							<button
-								className="login100-form-btn"
-								disabled={isLoading}
-								type="submit"
-							>
-								{isLoading ? "Logging In" : "Login"}
-							</button>
-						</div>
+							<div className="text-center p-t-12 p-b-12 m-t-48">
+								<span className="txt2">
+									Don't have an account?{" "}
+								</span>
+								<Link
+									to={
+										redirect != "/"
+											? `/signup?redirect=${redirect}`
+											: "/signup"
+									}
+									className="txt2 text-blue-500 hover:text-blue-950"
+								>
+									Sign Up
+								</Link>
+							</div>
+						</form>
 
-						<div className="text-center p-t-46 p-b-20">
-							<span className="txt2">or sign up using</span>
-						</div>
-
-						<div className="login100-form-social flex-c-m">
-							<a
-								href="#"
-								className="login100-form-social-item flex-c-m bg3 m-r-5"
-							>
-								<i
-									className="fa fa-google"
-									aria-hidden="true"
-								></i>
-							</a>
-
-							<a
-								href="#"
-								className="login100-form-social-item flex-c-m bg1 m-r-5"
-							>
-								<i
-									className="fa fa-facebook-f"
-									aria-hidden="true"
-								></i>
-							</a>
-
-							<a
-								href="#"
-								className="login100-form-social-item flex-c-m bg2 m-r-5"
-							>
-								<i
-									className="fa fa-twitter"
-									aria-hidden="true"
-								></i>
-							</a>
-						</div>
-
-						<div className="text-center py-3 mt-12">
-							<span className="txt2">
-								Don't have an account?{" "}
-							</span>
-							<Link
-								to={
-									redirect
-										? `/signup?redirect=${redirect}`
-										: "/signup"
-								}
-								className="txt2 text-blue-500 hover:text-blue-950"
-							>
-								Sign Up
-							</Link>
-						</div>
-					</form>
-
-					<div
-						className="login100-more"
-						style={{
-							backgroundImage:
-								"url('src/assets/img/hero/hero-1.jpg')",
-						}}
-					></div>
+						<div
+							className="login100-more"
+							style={{
+								backgroundImage:
+									"url('src/assets/img/hero/hero-1.jpg')",
+							}}
+						></div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
