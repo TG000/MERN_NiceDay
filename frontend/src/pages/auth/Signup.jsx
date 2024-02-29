@@ -8,9 +8,9 @@ import "./Auth.css";
 import { Loader } from "../../components";
 
 const Signup = () => {
-	const [username, setUsername] = useState("");
+	const [full_name, setFullName] = useState("");
 	const [email, setEmail] = useState("");
-	const [phoneNumber, setPhoneNumber] = useState("");
+	const [phone_number, setPhoneNumber] = useState("");
 	const [password, setPassword] = useState("");
 	const [confirmPass, setConfirmPass] = useState("");
 
@@ -45,7 +45,7 @@ const Signup = () => {
 		});
 
 		/*==================================================================
-    [ Validate ]*/
+        [ Validate ]*/
 		var input = $(".validate-input .input100");
 
 		$(".validate-form").on("submit", function () {
@@ -82,6 +82,10 @@ const Signup = () => {
 				) {
 					return false;
 				}
+			} else if (
+				$(input).attr("type") == "password" ||
+				$(input).attr("name") == "password"
+			) {
 			} else {
 				if ($(input).val().trim() == "") {
 					return false;
@@ -102,13 +106,39 @@ const Signup = () => {
 		}
 	});
 
+	const submitHandler = async (e) => {
+		e.preventDefault();
+
+		if (password != confirmPass) {
+			toast.error("Confirm password and passwords don't match!");
+		} else {
+			try {
+				const res = await signup({
+					full_name,
+					email,
+					phone_number,
+					password,
+				}).unwrap();
+				dispatch(setCredentials({ ...res }));
+				navigate(redirect);
+				toast.success("Signed up successfully!");
+			} catch (error) {
+				console.log(error);
+				toast.error(error.data.message);
+			}
+		}
+	};
+
 	return (
 		<>
 			<Loader />
 			<div className="limiter">
 				<div className="container-login100">
 					<div className="wrap-login100">
-						<form className="login100-form validate-form flex-c flex-col">
+						<form
+							onSubmit={submitHandler}
+							className="login100-form validate-form flex-c flex-col"
+						>
 							<Link
 								to="/"
 								className="login100-form-title p-t-12 p-b-12 m-b-20 flex-c"
@@ -125,19 +155,21 @@ const Signup = () => {
 
 							<div
 								className="wrap-input100 validate-input"
-								data-validate="Username is required!"
+								data-validate="Full name is required!"
 							>
 								<input
 									className="input100"
 									type="text"
 									name="username"
-									value={username}
+									value={full_name}
 									onChange={(e) =>
-										setUsername(e.target.value)
+										setFullName(e.target.value)
 									}
 								/>
 								<span className="focus-input100"></span>
-								<span className="label-input100">Username</span>
+								<span className="label-input100">
+									Full Name
+								</span>
 							</div>
 
 							<div
@@ -163,7 +195,7 @@ const Signup = () => {
 									className="input100"
 									type="text"
 									name="phone_number"
-									value={phoneNumber}
+									value={phone_number}
 									onChange={(e) =>
 										setPhoneNumber(e.target.value)
 									}
@@ -226,7 +258,7 @@ const Signup = () => {
 								</span>
 								<Link
 									to={
-										redirect
+										redirect != "/"
 											? `/login?redirect=${redirect}`
 											: "/login"
 									}

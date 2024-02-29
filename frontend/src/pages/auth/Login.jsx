@@ -194,6 +194,7 @@ const Login = () => {
 							<div className="container-login100-form-btn">
 								<button
 									className="login100-form-btn"
+									disabled={isLoading}
 									type="submit"
 								>
 									{isLoading ? "Logging In" : "Login"}
@@ -242,7 +243,7 @@ const Login = () => {
 								</span>
 								<Link
 									to={
-										redirect
+										redirect != "/"
 											? `/signup?redirect=${redirect}`
 											: "/signup"
 									}
