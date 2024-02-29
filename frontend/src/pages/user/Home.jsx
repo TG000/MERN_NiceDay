@@ -648,9 +648,7 @@ function Home() {
 							<div className="instagram__text">
 								<h2>Instagram</h2>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua.
+									Welcome to Nice Day, your gateway to essential style. Dive into a collection curated for the modern minimalist, where simplicity meets sophistication. Our site is a haven of everyday elegance, offering timeless pieces crafted from quality fabrics. From classic tees to versatile denim, discover wardrobe staples that effortlessly elevate your look. Embrace simplicity with a touch of flair, as Nice Day becomes your go-to destination for essential basics that redefine casual chic. Shop with ease and refine your everyday style with our curated selection of quality essentials.
 								</p>
 								<h3>#Nice_Day</h3>
 							</div>
