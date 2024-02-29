@@ -50,7 +50,7 @@ function Post() {
 						<div class="col-lg-12">
 							<div class="blog__details__pic">
 								<img
-									src="img/blog/details/blog-details.jpg"
+									src="src/assets/img/blog/details/blog-details.jpg"
 									alt=""
 								/>
 							</div>
@@ -145,7 +145,7 @@ function Post() {
 											<div class="blog__details__author">
 												<div class="blog__details__author__pic">
 													<img
-														src="img/blog/details/blog-author.jpg"
+														src="src/assets/img/blog/details/blog-author.jpg"
 														alt=""
 													/>
 												</div>
