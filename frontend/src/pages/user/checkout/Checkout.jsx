@@ -1,20 +1,6 @@
 import React from "react";
 import { Footer, Loader, Navbar } from "../../../components/";
 
-// Css import
-import "../../../assets/css/bootstrap.min.css";
-import "../../../assets/css/elegant-icons.css";
-import "../../../assets/css/font-awesome.min.css";
-import "../../../assets/css/magnific-popup.css";
-import "../../../assets/css/nice-select.css";
-import "../../../assets/css/magnific-popup.css";
-import "../../../assets/css/slicknav.min.css";
-import "../../../assets/css/style.css";
-
-// Js import
-import "../../../assets/js/bootstrap.min.js";
-import "../../../assets/js/main.js";
-
 function Checkout() {
 	return (
 		<>
@@ -47,9 +33,10 @@ function Checkout() {
 							<div className="row">
 								<div className="col-lg-8 col-md-6">
 									<h6 className="coupon__code">
-										<span className="icon_tag_alt"></span> Have
-										a coupon? <a href="#">Click here</a> to
-										enter your code
+										<span className="icon_tag_alt"></span>{" "}
+										Have a coupon?{" "}
+										<a href="#">Click here</a> to enter your
+										code
 									</h6>
 									<h6 className="checkout__title">
 										Billing Details
@@ -170,7 +157,9 @@ function Checkout() {
 								</div>
 								<div className="col-lg-4 col-md-6">
 									<div className="checkout__order">
-										<h4 className="order__title">Your order</h4>
+										<h4 className="order__title">
+											Your order
+										</h4>
 										<div className="checkout__order__products">
 											Product <span>Total</span>
 										</div>
@@ -236,7 +225,10 @@ function Checkout() {
 												<span className="checkmark"></span>
 											</label>
 										</div>
-										<button type="submit" className="site-btn">
+										<button
+											type="submit"
+											className="site-btn"
+										>
 											PLACE ORDER
 										</button>
 									</div>
