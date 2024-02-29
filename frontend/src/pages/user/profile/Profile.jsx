@@ -14,25 +14,20 @@ import "../../../assets/css/style.css";
 // Js import
 import "../../../assets/js/bootstrap.min.js";
 import "../../../assets/js/main.js";
-import "../../../index.css"
 
-function Profile{
-    return(
-        <>
-            <section>
-                <div className="w-3/4">
-                    <div className="w-1/4 pr-3">
-                        <div className="w-1/4 h-1/4 rounded-full">
-
-                        </div>
-                    </div>
-                    <div className="w-3/4 ">
-
-                    </div>
-                </div>
-            </section>
-        </>
-    )
+function Profile() {
+	return (
+		<>
+			<section>
+				<div className="w-3/4">
+					<div className="w-1/4 pr-3">
+						<div className="w-1/4 h-1/4 rounded-full"></div>
+					</div>
+					<div className="w-3/4 "></div>
+				</div>
+			</section>
+		</>
+	);
 }
 
-export default Profile
+export default Profile;

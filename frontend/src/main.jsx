@@ -23,7 +23,9 @@ import {
 	Cart,
 	Blog,
 	Post,
+	Profile,
 } from "./pages/";
+import { UserRoute } from "./components/index.js";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -31,12 +33,17 @@ const router = createBrowserRouter(
 			{/* Default */}
 			<Route path="/" element={<Home />} />
 
-			{/* Auth - Logged In */}
+			{/* Logged In */}
+			<Route path="" element={<UserRoute />}>
+				<Route path="/profile" element={<Profile />} />
+			</Route>
+
+			{/* Auth*/}
 			<Route path="/login" element={<Login />} />
 			<Route path="/signup" element={<Signup />} />
-			<Route path="/cart" element={<Cart />} />
 
 			{/* User */}
+			<Route path="/cart" element={<Cart />} />
 			<Route path="/about" element={<About />} />
 			<Route path="/contact" element={<Contact />} />
 			<Route path="/shop" element={<Shop />} />

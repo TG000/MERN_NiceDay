@@ -12,4 +12,19 @@ import Blog from "./user/blog/Blog";
 import Post from "./user/blog/Post";
 import About from "./user/about/About";
 
-export { Login, Signup, Home, Shop, Product, Contact, Cart, Blog, Post, About };
+// Logged in pages
+import Profile from "./user/profile/Profile";
+
+export {
+	Login,
+	Signup,
+	Home,
+	Shop,
+	Product,
+	Contact,
+	Cart,
+	Blog,
+	Post,
+	About,
+	Profile,
+};
