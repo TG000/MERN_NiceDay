@@ -17,6 +17,7 @@ import "../../assets/css/style.css";
 // Js import
 import "../../assets/js/bootstrap.min.js";
 import "../../assets/js/main.js";
+import { Link } from "react-router-dom";
 
 function Home() {
 	return (
@@ -62,10 +63,10 @@ function Home() {
 											an unwavering commitment to
 											exceptional quality.
 										</p>
-										<a href="#" className="primary-btn">
+										<Link to="" className="primary-btn">
 											Shop now{" "}
 											<span className="arrow_right"></span>
-										</a>
+										</Link>
 										<div className="hero__social">
 											<a href="#">
 												<i className="fa fa-facebook"></i>
@@ -144,8 +145,8 @@ function Home() {
 									/>
 								</div>
 								<div className="banner__item__text">
-									<h2>Clothing Collections 2024</h2>
-									<a href="#">Shop now</a>
+									<h2>Men</h2>
+									<Link to="/">Shop Now</Link>
 								</div>
 							</div>
 						</div>
@@ -158,8 +159,8 @@ function Home() {
 									/>
 								</div>
 								<div className="banner__item__text">
-									<h2>Accessories</h2>
-									<a href="#">Shop now</a>
+									<h2>Women</h2>
+									<Link to="/">Shop Now</Link>
 								</div>
 							</div>
 						</div>
@@ -172,8 +173,8 @@ function Home() {
 									/>
 								</div>
 								<div className="banner__item__text">
-									<h2>Shoes Spring 2024</h2>
-									<a href="#">Shop now</a>
+									<h2>Kids</h2>
+									<Link to="/">Shop Now</Link>
 								</div>
 							</div>
 						</div>
@@ -218,15 +219,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										<li>
-											<a href="#">
-												<img
-													src="src/assets/img/icon/compare.png"
-													alt=""
-												/>{" "}
-												<span>Compare</span>
-											</a>
-										</li>
+										
 										<li>
 											<a href="#">
 												<img
@@ -250,17 +243,7 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$67.24</h5>
-									<div className="product__color__select">
-										<label>
-											<input type="radio" id="pc-1" />
-										</label>
-										<label className="active black">
-											<input type="radio" id="pc-2" />
-										</label>
-										<label className="grey">
-											<input type="radio" id="pc-3" />
-										</label>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -282,15 +265,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										<li>
-											<a href="#">
-												<img
-													src="src/assets/img/icon/compare.png"
-													alt=""
-												/>{" "}
-												<span>Compare</span>
-											</a>
-										</li>
+										
 										<li>
 											<a href="#">
 												<img
@@ -314,17 +289,7 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$67.24</h5>
-									<div className="product__color__select">
-										<label>
-											<input type="radio" id="pc-4" />
-										</label>
-										<label className="active black">
-											<input type="radio" id="pc-5" />
-										</label>
-										<label className="grey">
-											<input type="radio" id="pc-6" />
-										</label>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -347,15 +312,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										<li>
-											<a href="#">
-												<img
-													src="src/assets/img/icon/compare.png"
-													alt=""
-												/>{" "}
-												<span>Compare</span>
-											</a>
-										</li>
+										
 										<li>
 											<a href="#">
 												<img
@@ -379,17 +336,7 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$43.48</h5>
-									<div className="product__color__select">
-										<label>
-											<input type="radio" id="pc-7" />
-										</label>
-										<label className="active black">
-											<input type="radio" id="pc-8" />
-										</label>
-										<label className="grey">
-											<input type="radio" id="pc-9" />
-										</label>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -411,15 +358,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										<li>
-											<a href="#">
-												<img
-													src="src/assets/img/icon/compare.png"
-													alt=""
-												/>{" "}
-												<span>Compare</span>
-											</a>
-										</li>
+										
 										<li>
 											<a href="#">
 												<img
@@ -443,17 +382,7 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$60.9</h5>
-									<div className="product__color__select">
-										<label>
-											<input type="radio" id="pc-10" />
-										</label>
-										<label className="active black">
-											<input type="radio" id="pc-11" />
-										</label>
-										<label className="grey">
-											<input type="radio" id="pc-12" />
-										</label>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -475,15 +404,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										<li>
-											<a href="#">
-												<img
-													src="src/assets/img/icon/compare.png"
-													alt=""
-												/>{" "}
-												<span>Compare</span>
-											</a>
-										</li>
+										
 										<li>
 											<a href="#">
 												<img
@@ -507,17 +428,7 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$31.37</h5>
-									<div className="product__color__select">
-										<label>
-											<input type="radio" id="pc-13" />
-										</label>
-										<label className="active black">
-											<input type="radio" id="pc-14" />
-										</label>
-										<label className="grey">
-											<input type="radio" id="pc-15" />
-										</label>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -540,15 +451,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										<li>
-											<a href="#">
-												<img
-													src="src/assets/img/icon/compare.png"
-													alt=""
-												/>{" "}
-												<span>Compare</span>
-											</a>
-										</li>
+										
 										<li>
 											<a href="#">
 												<img
@@ -572,17 +475,7 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$98.49</h5>
-									<div className="product__color__select">
-										<label>
-											<input type="radio" id="pc-16" />
-										</label>
-										<label className="active black">
-											<input type="radio" id="pc-17" />
-										</label>
-										<label className="grey">
-											<input type="radio" id="pc-18" />
-										</label>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -604,15 +497,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										<li>
-											<a href="#">
-												<img
-													src="src/assets/img/icon/compare.png"
-													alt=""
-												/>{" "}
-												<span>Compare</span>
-											</a>
-										</li>
+										
 										<li>
 											<a href="#">
 												<img
@@ -636,17 +521,7 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$49.66</h5>
-									<div className="product__color__select">
-										<label>
-											<input type="radio" id="pc-19" />
-										</label>
-										<label className="active black">
-											<input type="radio" id="pc-20" />
-										</label>
-										<label className="grey">
-											<input type="radio" id="pc-21" />
-										</label>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -668,15 +543,7 @@ function Home() {
 												/>
 											</a>
 										</li>
-										<li>
-											<a href="#">
-												<img
-													src="src/assets/img/icon/compare.png"
-													alt=""
-												/>{" "}
-												<span>Compare</span>
-											</a>
-										</li>
+										
 										<li>
 											<a href="#">
 												<img
@@ -700,17 +567,7 @@ function Home() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$26.28</h5>
-									<div className="product__color__select">
-										<label>
-											<input type="radio" id="pc-22" />
-										</label>
-										<label className="active black">
-											<input type="radio" id="pc-23" />
-										</label>
-										<label className="grey">
-											<input type="radio" id="pc-24" />
-										</label>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -749,9 +606,9 @@ function Home() {
 								<span>Deal Of The Week</span>
 								<h2>Multi-pocket Chest Bag Black</h2>
 								<Countdown targetDate={"2024/03/02"} />
-								<a href="#" className="primary-btn">
+								<Link to="/" className="primary-btn">
 									Shop now
-								</a>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -817,7 +674,7 @@ function Home() {
 									adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna aliqua.
 								</p>
-								<h3>#Male_Fashion</h3>
+								<h3>#Nice_Day</h3>
 							</div>
 						</div>
 					</div>
