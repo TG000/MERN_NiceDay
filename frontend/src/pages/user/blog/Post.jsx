@@ -22,11 +22,11 @@ function Post() {
 
 			<Navbar />
 			{/**Blog Details Hero Begin */}
-			<section class="blog-hero spad">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="col-lg-9 text-center">
-							<div class="blog__hero__text">
+			<section className="blog-hero spad">
+				<div className="container">
+					<div className="row d-flex justify-content-center">
+						<div className="col-lg-9 text-center">
+							<div className="blog__hero__text">
 								<h2>
 									Are you one of the thousands of Iphone
 									owners who has no idea
@@ -44,45 +44,45 @@ function Post() {
 			{/**Blog Details Hero End */}
 
 			{/**Blog Details Section Begin */}
-			<section class="blog-details spad">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="col-lg-12">
-							<div class="blog__details__pic">
+			<section className="blog-details spad">
+				<div className="container">
+					<div className="row d-flex justify-content-center">
+						<div className="col-lg-12">
+							<div className="blog__details__pic">
 								<img
 									src="src/assets/img/blog/details/blog-details.jpg"
 									alt=""
 								/>
 							</div>
 						</div>
-						<div class="col-lg-8">
-							<div class="blog__details__content">
-								<div class="blog__details__share">
+						<div className="col-lg-8">
+							<div className="blog__details__content">
+								<div className="blog__details__share">
 									<span>share</span>
 									<ul>
 										<li>
 											<a href="#">
-												<i class="fa fa-facebook"></i>
+												<i className="fa fa-facebook"></i>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="twitter">
-												<i class="fa fa-twitter"></i>
+											<a href="#" className="twitter">
+												<i className="fa fa-twitter"></i>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="youtube">
-												<i class="fa fa-youtube-play"></i>
+											<a href="#" className="youtube">
+												<i className="fa fa-youtube-play"></i>
 											</a>
 										</li>
 										<li>
-											<a href="#" class="linkedin">
-												<i class="fa fa-linkedin"></i>
+											<a href="#" className="linkedin">
+												<i className="fa fa-linkedin"></i>
 											</a>
 										</li>
 									</ul>
 								</div>
-								<div class="blog__details__text">
+								<div className="blog__details__text">
 									<p>
 										Hydroderm is the highly desired
 										anti-aging cream on the block. This
@@ -109,8 +109,8 @@ function Post() {
 										the skin.
 									</p>
 								</div>
-								<div class="blog__details__quote">
-									<i class="fa fa-quote-left"></i>
+								<div className="blog__details__quote">
+									<i className="fa fa-quote-left"></i>
 									<p>
 										“When designing an advertisement for a
 										particular product many things should be
@@ -119,7 +119,7 @@ function Post() {
 									</p>
 									<h6>_ John Smith _</h6>
 								</div>
-								<div class="blog__details__text">
+								<div className="blog__details__text">
 									<p>
 										Vyo-Serum along with tightening the skin
 										also reduces the fine lines indicating
@@ -139,23 +139,23 @@ function Post() {
 										sensitive near the eyes.
 									</p>
 								</div>
-								<div class="blog__details__option">
-									<div class="row">
-										<div class="col-lg-6 col-md-6 col-sm-6">
-											<div class="blog__details__author">
-												<div class="blog__details__author__pic">
+								<div className="blog__details__option">
+									<div className="row">
+										<div className="col-lg-6 col-md-6 col-sm-6">
+											<div className="blog__details__author">
+												<div className="blog__details__author__pic">
 													<img
 														src="src/assets/img/blog/details/blog-author.jpg"
 														alt=""
 													/>
 												</div>
-												<div class="blog__details__author__text">
+												<div className="blog__details__author__text">
 													<h5>Aiden Blair</h5>
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-6 col-md-6 col-sm-6">
-											<div class="blog__details__tags">
+										<div className="col-lg-6 col-md-6 col-sm-6">
+											<div className="blog__details__tags">
 												<a href="#">#Fashion</a>
 												<a href="#">#Trending</a>
 												<a href="#">#2020</a>
@@ -163,32 +163,32 @@ function Post() {
 										</div>
 									</div>
 								</div>
-								<div class="blog__details__btns">
-									<div class="row">
-										<div class="col-lg-6 col-md-6 col-sm-6">
+								<div className="blog__details__btns">
+									<div className="row">
+										<div className="col-lg-6 col-md-6 col-sm-6">
 											<a
 												href=""
-												class="blog__details__btns__item"
+												className="blog__details__btns__item"
 											>
 												<p>
-													<span class="arrow_left"></span>{" "}
+													<span className="arrow_left"></span>{" "}
 													Previous Pod
 												</p>
 												<h5>
-													It S Classified How To
-													Utilize Free Classified Ad
+													It S classNameified How To
+													Utilize Free classNameified Ad
 													Sites
 												</h5>
 											</a>
 										</div>
-										<div class="col-lg-6 col-md-6 col-sm-6">
+										<div className="col-lg-6 col-md-6 col-sm-6">
 											<a
 												href=""
-												class="blog__details__btns__item blog__details__btns__item--next"
+												className="blog__details__btns__item blog__details__btns__item--next"
 											>
 												<p>
 													Next Pod{" "}
-													<span class="arrow_right"></span>
+													<span className="arrow_right"></span>
 												</p>
 												<h5>
 													Tips For Choosing The
@@ -198,33 +198,33 @@ function Post() {
 										</div>
 									</div>
 								</div>
-								<div class="blog__details__comment">
+								<div className="blog__details__comment">
 									<h4>Leave A Comment</h4>
 									<form action="#">
-										<div class="row">
-											<div class="col-lg-4 col-md-4">
+										<div className="row">
+											<div className="col-lg-4 col-md-4">
 												<input
 													type="text"
 													placeholder="Name"
 												/>
 											</div>
-											<div class="col-lg-4 col-md-4">
+											<div className="col-lg-4 col-md-4">
 												<input
 													type="text"
 													placeholder="Email"
 												/>
 											</div>
-											<div class="col-lg-4 col-md-4">
+											<div className="col-lg-4 col-md-4">
 												<input
 													type="text"
 													placeholder="Phone"
 												/>
 											</div>
-											<div class="col-lg-12 text-center">
+											<div className="col-lg-12 text-center">
 												<textarea placeholder="Comment"></textarea>
 												<button
 													type="submit"
-													class="site-btn"
+													className="site-btn"
 												>
 													Post Comment
 												</button>

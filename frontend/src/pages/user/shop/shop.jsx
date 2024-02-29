@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Loader, Navbar } from "../../../components/index.js";
+import { Footer, Loader, Navbar } from "../../../components/";
 
 // Css import
 import "../../../assets/css/bootstrap.min.css";

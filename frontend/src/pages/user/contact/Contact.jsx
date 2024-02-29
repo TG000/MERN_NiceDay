@@ -23,7 +23,7 @@ function Contact() {
 			<Navbar />
 
 			{/* Map Begin */}
-			<div class="map">
+			<div className="map">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111551.9926412813!2d-90.27317134641879!3d38.606612219170856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1597926938024!5m2!1sen!2sbd"
 					height="500"
@@ -36,12 +36,12 @@ function Contact() {
 			{/* Map End */}
 
 			{/* Contact Section Begin */}
-			<section class="contact spad">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 col-md-6">
-							<div class="contact__text">
-								<div class="section-title">
+			<section className="contact spad">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-6 col-md-6">
+							<div className="contact__text">
+								<div className="section-title">
 									<span>Information</span>
 									<h2>Contact Us</h2>
 									<p>
@@ -70,27 +70,27 @@ function Contact() {
 								</ul>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-6">
-							<div class="contact__form">
+						<div className="col-lg-6 col-md-6">
+							<div className="contact__form">
 								<form action="#">
-									<div class="row">
-										<div class="col-lg-6">
+									<div className="row">
+										<div className="col-lg-6">
 											<input
 												type="text"
 												placeholder="Name"
 											/>
 										</div>
-										<div class="col-lg-6">
+										<div className="col-lg-6">
 											<input
 												type="text"
 												placeholder="Email"
 											/>
 										</div>
-										<div class="col-lg-12">
+										<div className="col-lg-12">
 											<textarea placeholder="Message"></textarea>
 											<button
 												type="submit"
-												class="site-btn"
+												className="site-btn"
 											>
 												Send Message
 											</button>
