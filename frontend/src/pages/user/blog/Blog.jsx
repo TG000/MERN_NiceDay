@@ -25,14 +25,14 @@ function Blog() {
 
 			{/**Breadcrumb Section Begin */}
 			<section
-				class="breadcrumb-blog "
+				className="breadcrumb-blog "
 				style={{
 					backgroundImage:
 						"url(src/assets/img/breadcrumb-bg.jpg"}}
 			>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-12">
 							<h2>Our Blog</h2>
 						</div>
 					</div>
@@ -41,17 +41,17 @@ function Blog() {
 			{/**Breadcrumb Section End */}
 
 			{/**Blog Section Begin */}
-			<section class="blog spad">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog__item">
+			<section className="blog spad">
+				<div className="container">
+					<div className="row">
+						<div className="col-lg-4 col-md-6 col-sm-6">
+							<div className="blog__item">
 								<div
-									class="blog__item__pic "
+									className="blog__item__pic "
 									style={{
 										backgroundImage:
 											"url(src/assets/img/blog/blog-1.jpg"}}></div>
-								<div class="blog__item__text">
+								<div className="blog__item__text">
 									<span>
 										<img
 											src="src/assets/img/icon/calendar.png"
@@ -66,15 +66,15 @@ function Blog() {
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog__item">
+						<div className="col-lg-4 col-md-6 col-sm-6">
+							<div className="blog__item">
 								<div
-									class="blog__item__pic "
+									className="blog__item__pic "
 									style={{
 										backgroundImage:
 											"url(src/assets/img/blog/blog-2.jpg"}}
 								></div>
-								<div class="blog__item__text">
+								<div className="blog__item__text">
 									<span>
 										<img
 											src="src/assets/img/icon/calendar.png"
@@ -87,14 +87,14 @@ function Blog() {
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog__item">
+						<div className="col-lg-4 col-md-6 col-sm-6">
+							<div className="blog__item">
 								<div
-									class="blog__item__pic "style={{
+									className="blog__item__pic "style={{
 										backgroundImage:
 											"url(src/assets/img/blog/blog-3.jpg"}}
 								></div>
-								<div class="blog__item__text">
+								<div className="blog__item__text">
 									<span>
 										<img
 											src="src/assets/img/icon/calendar.png"
@@ -107,14 +107,14 @@ function Blog() {
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog__item">
+						<div className="col-lg-4 col-md-6 col-sm-6">
+							<div className="blog__item">
 								<div
-									class="blog__item__pic "style={{
+									className="blog__item__pic "style={{
 										backgroundImage:
 											"url(src/assets/img/blog/blog-4.jpg"}}
 								></div>
-								<div class="blog__item__text">
+								<div className="blog__item__text">
 									<span>
 										<img
 											src="src/assets/img/icon/calendar.png"
@@ -127,15 +127,15 @@ function Blog() {
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog__item">
+						<div className="col-lg-4 col-md-6 col-sm-6">
+							<div className="blog__item">
 								<div
-									class="blog__item__pic "
+									className="blog__item__pic "
 									style={{
 										backgroundImage:
 											"url(src/assets/img/blog/blog-5.jpg"}}
 								></div>
-								<div class="blog__item__text">
+								<div className="blog__item__text">
 									<span>
 										<img
 											src="src/assets/img/icon/calendar.png"
@@ -148,15 +148,15 @@ function Blog() {
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog__item">
+						<div className="col-lg-4 col-md-6 col-sm-6">
+							<div className="blog__item">
 								<div
-									class="blog__item__pic "
+									className="blog__item__pic "
 									style={{
 										backgroundImage:
 											"url(src/assets/img/blog/blog-6.jpg"}}
 								></div>
-								<div class="blog__item__text">
+								<div className="blog__item__text">
 									<span>
 										<img
 											src="src/assets/img/icon/calendar.png"
@@ -171,15 +171,15 @@ function Blog() {
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog__item">
+						<div className="col-lg-4 col-md-6 col-sm-6">
+							<div className="blog__item">
 								<div
-									class="blog__item__pic "
+									className="blog__item__pic "
 									style={{
 										backgroundImage:
 											"url(src/assets/img/blog/blog-7.jpg"}}
 								></div>
-								<div class="blog__item__text">
+								<div className="blog__item__text">
 									<span>
 										<img
 											src="src/assets/img/icon/calendar.png"
@@ -192,15 +192,15 @@ function Blog() {
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog__item">
+						<div className="col-lg-4 col-md-6 col-sm-6">
+							<div className="blog__item">
 								<div
-									class="blog__item__pic "
+									className="blog__item__pic "
 									style={{
 										backgroundImage:
 											"url(src/assets/img/blog/blog-8.jpg"}}
 								></div>
-								<div class="blog__item__text">
+								<div className="blog__item__text">
 									<span>
 										<img
 											src="src/assets/img/icon/calendar.png"
@@ -213,15 +213,15 @@ function Blog() {
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog__item">
+						<div className="col-lg-4 col-md-6 col-sm-6">
+							<div className="blog__item">
 								<div
-									class="blog__item__pic "
+									className="blog__item__pic "
 									style={{
 										backgroundImage:
 											"url(src/assets/img/blog/blog-9.jpg"}}
 								></div>
-								<div class="blog__item__text">
+								<div className="blog__item__text">
 									<span>
 										<img
 											src="src/assets/img/icon/calendar.png"
