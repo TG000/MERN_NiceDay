@@ -1,23 +1,24 @@
 import React from "react";
-import { Footer, Navbar } from "../../../components/index.js";
+import { Footer, Navbar, Loader } from "../../../components/";
 
 // Css import
-import "../../assets/css/bootstrap.min.css";
-import "../../assets/css/elegant-icons.css";
-import "../../assets/css/font-awesome.min.css";
-import "../../assets/css/magnific-popup.css";
-import "../../assets/css/nice-select.css";
-import "../../assets/css/magnific-popup.css";
-import "../../assets/css/slicknav.min.css";
-import "../../assets/css/style.css";
+import "../../../assets/css/bootstrap.min.css";
+import "../../../assets/css/elegant-icons.css";
+import "../../../assets/css/font-awesome.min.css";
+import "../../../assets/css/magnific-popup.css";
+import "../../../assets/css/nice-select.css";
+import "../../../assets/css/magnific-popup.css";
+import "../../../assets/css/slicknav.min.css";
+import "../../../assets/css/style.css";
 
 // Js import
-import "../../assets/js/bootstrap.min.js";
-import "../../assets/js/main.js";
+import "../../../assets/js/bootstrap.min.js";
+import "../../../assets/js/main.js";
 
-function Shop_Detail() {
+function Product() {
     return(
         <>
+            <Loader/>
             <Navbar/>
             {/** Shop Details Section Begin*/}
             <section class="shop-details">
@@ -464,4 +465,4 @@ function Shop_Detail() {
     )
 }
 
-export default Shop_Detail
+export default Product;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Countdown, Footer, Navbar } from "../../components/";
+import { Countdown, Footer, Loader, Navbar } from "../../components/";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -21,6 +21,8 @@ import "../../assets/js/main.js";
 function Home() {
 	return (
 		<>
+			<Loader />
+
 			<Navbar />
 
 			{/* Hero Section Begin */}

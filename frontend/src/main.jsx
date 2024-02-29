@@ -12,20 +12,37 @@ import { Provider } from "react-redux";
 import store from "./redux/store.js";
 
 // Pages
-import { Home, Login, Signup, Contact, About, Shop, Shop_Detail, Shopping_Cart } from "./pages/";
+import {
+	Home,
+	Login,
+	Signup,
+	Contact,
+	About,
+	Shop,
+	Product,
+	Cart,
+	Blog,
+	Post,
+} from "./pages/";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<App />}>
+			{/* Default */}
 			<Route path="/" element={<Home />} />
+
+			{/* Auth - Logged In */}
 			<Route path="/login" element={<Login />} />
 			<Route path="/signup" element={<Signup />} />
-			<Route path="/About" element={<About />} />
+			<Route path="/cart" element={<Cart />} />
+
+			{/* User */}
+			<Route path="/about" element={<About />} />
 			<Route path="/contact" element={<Contact />} />
 			<Route path="/shop" element={<Shop />} />
-			<Route path="/shop" element={<Shop_Detail />} />
-			<Route path="/shop_detail" element={<Signup />} />
-			<Route path="/shop" element={<Shopping_Cart />} />
+			<Route path="/shop/:id" element={<Product />} />
+			<Route path="/blog" element={<Blog />} />
+			<Route path="/blog/:id" element={<Post />} />
 		</Route>
 	)
 );

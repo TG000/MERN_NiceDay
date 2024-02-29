@@ -185,8 +185,9 @@ const Login = () => {
 
 						<div className="container-login100-form-btn">
 							<button
-								disabled={isLoading}
 								className="login100-form-btn"
+								disabled={isLoading}
+								type="submit"
 							>
 								{isLoading ? "Logging In" : "Login"}
 							</button>

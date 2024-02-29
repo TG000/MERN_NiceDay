@@ -1,23 +1,25 @@
 import React from "react";
-import { Footer, Navbar } from "../../../components/";
+import { Footer, Loader, Navbar } from "../../../components/";
 
 // Css import
-import "../../assets/css/bootstrap.min.css";
-import "../../assets/css/elegant-icons.css";
-import "../../assets/css/font-awesome.min.css";
-import "../../assets/css/magnific-popup.css";
-import "../../assets/css/nice-select.css";
-import "../../assets/css/magnific-popup.css";
-import "../../assets/css/slicknav.min.css";
-import "../../assets/css/style.css";
+import "../../../assets/css/bootstrap.min.css";
+import "../../../assets/css/elegant-icons.css";
+import "../../../assets/css/font-awesome.min.css";
+import "../../../assets/css/magnific-popup.css";
+import "../../../assets/css/nice-select.css";
+import "../../../assets/css/magnific-popup.css";
+import "../../../assets/css/slicknav.min.css";
+import "../../../assets/css/style.css";
 
 // Js import
-import "../../assets/js/bootstrap.min.js";
-import "../../assets/js/main.js";
+import "../../../assets/js/bootstrap.min.js";
+import "../../../assets/js/main.js";
 
 function About() {
 	return (
 		<>
+			<Loader />
+
 			<Navbar />
 			{/**Breadcrumb Section Begin */}
 			<section class="breadcrumb-option">
@@ -322,12 +324,9 @@ function About() {
 				</div>
 			</section>
 			{/**Client Section End */}
-			<Footer/>
+			<Footer />
 		</>
 	);
 }
 
-
-
-export default About
-
+export default About;
