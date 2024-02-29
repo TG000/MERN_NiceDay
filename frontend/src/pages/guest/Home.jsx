@@ -1,5 +1,5 @@
 import React from "react";
-import { Countdown, Footer, Loader, Navbar } from "../../components/";
+import { Countdown, Footer, Loader, Navbar } from "../../components";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -583,7 +583,7 @@ function Home() {
 							<div className="categories__deal__countdown">
 								<span>Deal Of The Week</span>
 								<h2>Multi-pocket Chest Bag Black</h2>
-								<Countdown targetDate={"2024/03/02"} />
+								<Countdown targetDate={"2024/03/04"} />
 								<Link to="/" className="primary-btn">
 									Shop now
 								</Link>

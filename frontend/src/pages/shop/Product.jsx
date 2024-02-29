@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Navbar, Loader } from "../../../components/";
+import { Footer, Navbar, Loader } from "../../components/";
 
 function Product() {
 	return (
