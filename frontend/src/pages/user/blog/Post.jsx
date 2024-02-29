@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Navbar } from "../../../components/";
+import { Footer, Loader, Navbar } from "../../../components/";
 
 // Css import
 import "../../../assets/css/bootstrap.min.css";
@@ -18,7 +18,9 @@ import "../../../assets/js/main.js";
 function Post() {
 	return (
 		<>
-			<Navbar></Navbar>
+			<Loader />
+
+			<Navbar />
 			{/**Blog Details Hero Begin */}
 			<section class="blog-hero spad">
 				<div class="container">

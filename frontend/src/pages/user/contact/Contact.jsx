@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Navbar } from "../../../components/";
+import { Footer, Loader, Navbar } from "../../../components/";
 
 // Css import
 import "../../../assets/css/bootstrap.min.css";
@@ -18,6 +18,8 @@ import "../../../assets/js/main.js";
 function Contact() {
 	return (
 		<>
+			<Loader />
+
 			<Navbar />
 
 			{/* Map Begin */}

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Footer, Navbar } from "../../../components/";
+import { Footer, Loader, Navbar } from "../../../components/";
 
 // Css import
 import "../../../assets/css/bootstrap.min.css";
@@ -19,6 +19,10 @@ import "../../../assets/js/main.js";
 function Cart() {
 	return (
 		<>
+			<Loader />
+
+			<Navbar />
+
 			{/**Breadcrumb Section Begin */}
 			<section class="breadcrumb-option">
 				<div class="container">
