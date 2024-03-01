@@ -12,7 +12,7 @@ function Blog() {
 			<section
 				className="breadcrumb-blog "
 				style={{
-					backgroundImage: "url(src/assets/img/breadcrumb-bg.jpg",
+					backgroundImage: "url(../src/assets/img/breadcrumb-bg.jpg",
 				}}
 			>
 				<div className="container">
@@ -35,13 +35,13 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-1.jpg",
+											"url(../src/assets/img/blog/blog-1.jpg",
 									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="src/assets/img/icon/calendar.png"
+											src="../src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										16 February 2020
@@ -49,7 +49,7 @@ function Blog() {
 									<h5>
 										What Curling Irons Are The Best Ones
 									</h5>
-									<a href="#">Read More</a>
+									<a href="/blog/nive">Read More</a>
 								</div>
 							</div>
 						</div>
@@ -59,13 +59,13 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-2.jpg",
+											"url(../src/assets/img/blog/blog-2.jpg",
 									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="src/assets/img/icon/calendar.png"
+											src="../src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										21 February 2020
@@ -81,13 +81,13 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-3.jpg",
+											"url(../src/assets/img/blog/blog-3.jpg",
 									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="src/assets/img/icon/calendar.png"
+											src="../src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										28 February 2020
@@ -103,13 +103,13 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-4.jpg",
+											"url(../src/assets/img/blog/blog-4.jpg",
 									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="src/assets/img/icon/calendar.png"
+											src="../src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										16 February 2020
@@ -125,13 +125,13 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-5.jpg",
+											"url(../src/assets/img/blog/blog-5.jpg",
 									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="src/assets/img/icon/calendar.png"
+											src="../src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										21 February 2020
@@ -147,13 +147,13 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-6.jpg",
+											"url(../src/assets/img/blog/blog-6.jpg",
 									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="src/assets/img/icon/calendar.png"
+											src="../src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										28 February 2020
@@ -171,13 +171,13 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-7.jpg",
+											"url(../src/assets/img/blog/blog-7.jpg",
 									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="src/assets/img/icon/calendar.png"
+											src="../src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										16 February 2020
@@ -193,13 +193,13 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-8.jpg",
+											"url(../src/assets/img/blog/blog-8.jpg",
 									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="src/assets/img/icon/calendar.png"
+											src="../src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										21 February 2020
@@ -215,13 +215,13 @@ function Blog() {
 									className="blog__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/blog/blog-9.jpg",
+											"url(../src/assets/img/blog/blog-9.jpg",
 									}}
 								></div>
 								<div className="blog__item__text">
 									<span>
 										<img
-											src="src/assets/img/icon/calendar.png"
+											src="../src/assets/img/icon/calendar.png"
 											alt=""
 										/>{" "}
 										28 February 2020

@@ -43,9 +43,7 @@ function About() {
 							<div className="about__item">
 								<h4>Who We Are ?</h4>
 								<p>
-									Contextual advertising programs sometimes
-									have strict policies that need to be adhered
-									too. Let’s take Google as an example.
+								At Nice Day, we are purveyors of timeless style and modern elegance. Our curated collection reflects a commitment to quality essentials, offering a blend of sophistication and simplicity. 
 								</p>
 							</div>
 						</div>
@@ -53,10 +51,7 @@ function About() {
 							<div className="about__item">
 								<h4>Who We Do ?</h4>
 								<p>
-									In this digital generation where information
-									can be easily obtained within seconds,
-									business cards still have retained their
-									importance.
+								At Nice Day, we curate a collection of essential, quality clothing for the modern minimalist. Discover timeless pieces crafted from premium fabrics, offering everyday elegance. 
 								</p>
 							</div>
 						</div>
@@ -64,9 +59,7 @@ function About() {
 							<div className="about__item">
 								<h4>Why Choose Us</h4>
 								<p>
-									A two or three storey house is the ideal way
-									to maximise the piece of earth on which our
-									home sits, but for older or infirm people.
+									Choose Nice Day for a seamless blend of quality, style, and simplicity. Our curated collection ensures timeless elegance, offering versatile essentials for the modern individual.
 								</p>
 							</div>
 						</div>
@@ -83,11 +76,7 @@ function About() {
 							<div className="testimonial__text">
 								<span className="icon_quotations"></span>
 								<p>
-									“Going out after work? Take your butane
-									curling iron with you to the office, heat it
-									up, style your hair before you leave the
-									office and you won’t have to make a trip
-									back home.”
+									"Fashion is the art we wear, telling stories of identity and confidence in every stitch and style."
 								</p>
 								<div className="testimonial__author">
 									<div className="testimonial__author__pic">
@@ -97,8 +86,8 @@ function About() {
 										/>
 									</div>
 									<div className="testimonial__author__text">
-										<h5>Augusta Schultz</h5>
-										<p>Fashion Design</p>
+										<h5>Nice Day</h5>
+										<p>2024</p>
 									</div>
 								</div>
 							</div>
