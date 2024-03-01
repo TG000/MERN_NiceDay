@@ -1,5 +1,6 @@
 // Admin pages
 import UserList from "./admin/UserList";
+import CategoryList from "./admin/CategoryList";
 
 // Auth pages
 import Login from "./auth/Login";
@@ -20,17 +21,18 @@ import About from "./guest/About";
 import Profile from "./user/Profile";
 
 export {
+	UserList,
+	CategoryList,
 	Login,
 	Signup,
 	Home,
 	Shop,
 	Product,
 	Contact,
+	Checkout,
 	Cart,
 	Blog,
 	Post,
 	About,
 	Profile,
-	Checkout,
-	UserList,
 };
