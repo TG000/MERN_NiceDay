@@ -20,6 +20,7 @@ import {
 	Post,
 	Profile,
 	UserList,
+	CategoryList,
 } from "./pages/";
 import { AdminRoute, UserRoute } from "./components/";
 
@@ -32,6 +33,7 @@ const router = createBrowserRouter(
 			{/* Admin routes */}
 			<Route path="/admin" element={<AdminRoute />}>
 				<Route path="userlist" element={<UserList />} />
+				<Route path="categorylist" element={<CategoryList />} />
 			</Route>
 
 			{/* Logged In */}
