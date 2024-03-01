@@ -33,7 +33,7 @@ function Product() {
 												className="product__thumb__pic "
 												style={{
 													backgroundImage:
-														"url(src/assets/img/shop-details/thumb-1.png",
+														"url(../src/assets/img/shop-details/thumb-1.png",
 												}}
 											></div>
 										</a>
@@ -49,7 +49,7 @@ function Product() {
 												className="product__thumb__pic "
 												style={{
 													backgroundImage:
-														"url(src/assets/img/shop-details/thumb-2.png",
+														"url(../src/assets/img/shop-details/thumb-2.png",
 												}}
 											></div>
 										</a>
@@ -65,7 +65,7 @@ function Product() {
 												className="product__thumb__pic "
 												style={{
 													backgroundImage:
-														"url(src/assets/img/shop-details/thumb-3.png",
+														"url(../src/assets/img/shop-details/thumb-3.png",
 												}}
 											></div>
 										</a>
@@ -81,7 +81,7 @@ function Product() {
 												className="product__thumb__pic "
 												style={{
 													backgroundImage:
-														"url(src/assets/img/shop-details/thumb-4.png",
+														"url(../src/assets/img/shop-details/thumb-4.png",
 												}}
 											>
 												<i className="fa fa-play"></i>
@@ -99,7 +99,7 @@ function Product() {
 									>
 										<div className="product__details__pic__item">
 											<img
-												src="src/assets/img/shop-details/product-big-2.png"
+												src="../src/assets/img/shop-details/product-big-2.png"
 												alt=""
 											/>
 										</div>
@@ -111,7 +111,7 @@ function Product() {
 									>
 										<div className="product__details__pic__item">
 											<img
-												src="src/assets/img/shop-details/product-big-3.png"
+												src="../src/assets/img/shop-details/product-big-3.png"
 												alt=""
 											/>
 										</div>
@@ -123,7 +123,7 @@ function Product() {
 									>
 										<div className="product__details__pic__item">
 											<img
-												src="src/assets/img/shop-details/product-big.png"
+												src="../src/assets/img/shop-details/product-big.png"
 												alt=""
 											/>
 										</div>
@@ -135,7 +135,7 @@ function Product() {
 									>
 										<div className="product__details__pic__item">
 											<img
-												src="src/assets/img/shop-details/product-big-4.png"
+												src="../src/assets/img/shop-details/product-big-4.png"
 												alt=""
 											/>
 											<a
@@ -195,24 +195,7 @@ function Product() {
 												<input type="radio" id="sm" />
 											</label>
 										</div>
-										<div className="product__details__option__color">
-											<span>Color:</span>
-											<label className="c-1" for="sp-1">
-												<input type="radio" id="sp-1" />
-											</label>
-											<label className="c-2" for="sp-2">
-												<input type="radio" id="sp-2" />
-											</label>
-											<label className="c-3" for="sp-3">
-												<input type="radio" id="sp-3" />
-											</label>
-											<label className="c-4" for="sp-4">
-												<input type="radio" id="sp-4" />
-											</label>
-											<label className="c-9" for="sp-9">
-												<input type="radio" id="sp-9" />
-											</label>
-										</div>
+										
 									</div>
 									<div className="product__details__cart__option">
 										<div className="quantity">
@@ -229,34 +212,9 @@ function Product() {
 											<i className="fa fa-heart"></i> add
 											to wishlist
 										</a>
-										<a href="#">
-											<i className="fa fa-exchange"></i>{" "}
-											Add To Compare
-										</a>
+										
 									</div>
-									<div className="product__details__last__option">
-										<h5>
-											<span>
-												Guaranteed Safe Checkout
-											</span>
-										</h5>
-										<img
-											src="src/assets/img/shop-details/details-payment.png"
-											alt=""
-										/>
-										<ul>
-											<li>
-												<span>SKU:</span> 3812912
-											</li>
-											<li>
-												<span>Categories:</span> Clothes
-											</li>
-											<li>
-												<span>Tag:</span> Clothes, Skin,
-												Body
-											</li>
-										</ul>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -274,16 +232,7 @@ function Product() {
 												Description
 											</a>
 										</li>
-										<li className="nav-item">
-											<a
-												className="nav-link"
-												data-toggle="tab"
-												href="#tabs-6"
-												role="tab"
-											>
-												Customer Previews(5)
-											</a>
-										</li>
+										
 										<li className="nav-item">
 											<a
 												className="nav-link"
@@ -313,173 +262,16 @@ function Product() {
 													mattis drostique des commodo
 													pharetras loremos.
 												</p>
-												<div className="product__details__tab__content__item">
-													<h5>Products Infomation</h5>
-													<p>
-														A Pocket PC is a
-														handheld computer, which
-														features many of the
-														same capabilities as a
-														modern PC. These handy
-														little devices allow
-														individuals to retrieve
-														and store e-mail
-														messages, create a
-														contact file, coordinate
-														appointments, surf the
-														internet, exchange text
-														messages and more. Every
-														product that is labeled
-														as a Pocket PC must be
-														accompanied with
-														specific software to
-														operate the unit and
-														must feature a
-														touchscreen and
-														touchpad.
-													</p>
-													<p>
-														As is the case with any
-														new technology product,
-														the cost of a Pocket PC
-														was substantial during
-														it’s early release. For
-														approximately $700.00,
-														consumers could purchase
-														one of top-of-the-line
-														Pocket PCs in 2003.
-														These days, customers
-														are finding that prices
-														have become much more
-														reasonable now that the
-														newness is wearing off.
-														For approximately
-														$350.00, a new Pocket PC
-														can now be purchased.
-													</p>
-												</div>
-												<div className="product__details__tab__content__item">
-													<h5>Material used</h5>
-													<p>
-														Polyester is deemed
-														lower quality due to its
-														none natural quality’s.
-														Made from synthetic
-														materials, not natural
-														like wool. Polyester
-														suits become creased
-														easily and are known for
-														not being breathable.
-														Polyester suits tend to
-														have a shine to them
-														compared to wool and
-														cotton suits, this can
-														make the suit look
-														cheap. The texture of
-														velvet is luxurious and
-														breathable. Velvet is a
-														great choice for dinner
-														party jacket and can be
-														worn all year round.
-													</p>
-												</div>
 											</div>
 										</div>
-										<div
-											className="tab-pane"
-											id="tabs-6"
-											role="tabpanel"
-										>
-											<div className="product__details__tab__content">
-												<div className="product__details__tab__content__item">
-													<h5>Products Infomation</h5>
-													<p>
-														A Pocket PC is a
-														handheld computer, which
-														features many of the
-														same capabilities as a
-														modern PC. These handy
-														little devices allow
-														individuals to retrieve
-														and store e-mail
-														messages, create a
-														contact file, coordinate
-														appointments, surf the
-														internet, exchange text
-														messages and more. Every
-														product that is labeled
-														as a Pocket PC must be
-														accompanied with
-														specific software to
-														operate the unit and
-														must feature a
-														touchscreen and
-														touchpad.
-													</p>
-													<p>
-														As is the case with any
-														new technology product,
-														the cost of a Pocket PC
-														was substantial during
-														it’s early release. For
-														approximately $700.00,
-														consumers could purchase
-														one of top-of-the-line
-														Pocket PCs in 2003.
-														These days, customers
-														are finding that prices
-														have become much more
-														reasonable now that the
-														newness is wearing off.
-														For approximately
-														$350.00, a new Pocket PC
-														can now be purchased.
-													</p>
-												</div>
-												<div className="product__details__tab__content__item">
-													<h5>Material used</h5>
-													<p>
-														Polyester is deemed
-														lower quality due to its
-														none natural quality’s.
-														Made from synthetic
-														materials, not natural
-														like wool. Polyester
-														suits become creased
-														easily and are known for
-														not being breathable.
-														Polyester suits tend to
-														have a shine to them
-														compared to wool and
-														cotton suits, this can
-														make the suit look
-														cheap. The texture of
-														velvet is luxurious and
-														breathable. Velvet is a
-														great choice for dinner
-														party jacket and can be
-														worn all year round.
-													</p>
-												</div>
-											</div>
-										</div>
+										
 										<div
 											className="tab-pane"
 											id="tabs-7"
 											role="tabpanel"
 										>
 											<div className="product__details__tab__content">
-												<p className="note">
-													Nam tempus turpis at metus
-													scelerisque placerat nulla
-													deumantos solicitud felis.
-													Pellentesque diam dolor,
-													elementum etos lobortis des
-													mollis ut risus. Sedcus
-													faucibus an sullamcorper
-													mattis drostique des commodo
-													pharetras loremos.
-												</p>
+												
 												<div className="product__details__tab__content__item">
 													<h5>Products Infomation</h5>
 													<p>
@@ -576,7 +368,7 @@ function Product() {
 									className="product__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/product/product-1.jpg",
+											"url(../src/assets/img/product/product-1.jpg",
 									}}
 								>
 									<span className="label">New</span>
@@ -584,24 +376,16 @@ function Product() {
 										<li>
 											<a href="#">
 												<img
-													src="src/assets/img/icon/heart.png"
+													src="../src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
 										</li>
+										
 										<li>
 											<a href="#">
 												<img
-													src="src/assets/img/icon/compare.png"
-													alt=""
-												/>{" "}
-												<span>Compare</span>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<img
-													src="src/assets/img/icon/search.png"
+													src="../src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>
@@ -621,20 +405,7 @@ function Product() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$67.24</h5>
-									<div className="product__color__select">
-										<label for="pc-1">
-											<input type="radio" id="pc-1" />
-										</label>
-										<label
-											className="active black"
-											for="pc-2"
-										>
-											<input type="radio" id="pc-2" />
-										</label>
-										<label className="grey" for="pc-3">
-											<input type="radio" id="pc-3" />
-										</label>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -644,14 +415,14 @@ function Product() {
 									className="product__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/product/product-2.jpg",
+											"url(../src/assets/img/product/product-2.jpg",
 									}}
 								>
 									<ul className="product__hover">
 										<li>
 											<a href="#">
 												<img
-													src="src/assets/img/icon/heart.png"
+													src="../src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
@@ -659,7 +430,7 @@ function Product() {
 										<li>
 											<a href="#">
 												<img
-													src="src/assets/img/icon/compare.png"
+													src="../src/assets/img/icon/compare.png"
 													alt=""
 												/>{" "}
 												<span>Compare</span>
@@ -668,7 +439,7 @@ function Product() {
 										<li>
 											<a href="#">
 												<img
-													src="src/assets/img/icon/search.png"
+													src="../src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>
@@ -688,20 +459,7 @@ function Product() {
 										<i className="fa fa-star-o"></i>
 									</div>
 									<h5>$67.24</h5>
-									<div className="product__color__select">
-										<label for="pc-4">
-											<input type="radio" id="pc-4" />
-										</label>
-										<label
-											className="active black"
-											for="pc-5"
-										>
-											<input type="radio" id="pc-5" />
-										</label>
-										<label className="grey" for="pc-6">
-											<input type="radio" id="pc-6" />
-										</label>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -711,7 +469,7 @@ function Product() {
 									className="product__item__pic "
 									style={{
 										backgroundImage:
-											"url(src/assets/img/product/product-3.jpg",
+											"url(../src/assets/img/product/product-3.jpg",
 									}}
 								>
 									<span className="label">Sale</span>
@@ -719,7 +477,7 @@ function Product() {
 										<li>
 											<a href="#">
 												<img
-													src="src/assets/img/icon/heart.png"
+													src="../src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
@@ -727,7 +485,7 @@ function Product() {
 										<li>
 											<a href="#">
 												<img
-													src="src/assets/img/icon/compare.png"
+													src="../src/assets/img/icon/compare.png"
 													alt=""
 												/>{" "}
 												<span>Compare</span>
@@ -736,7 +494,7 @@ function Product() {
 										<li>
 											<a href="#">
 												<img
-													src="src/assets/img/icon/search.png"
+													src="../src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>
@@ -779,14 +537,14 @@ function Product() {
 									className="product__item__pic"
 									style={{
 										backgroundImage:
-											"url(src/assets/img/product/product-4.jpg)",
+											"url(../src/assets/img/product/product-4.jpg)",
 									}}
 								>
 									<ul className="product__hover">
 										<li>
 											<a href="#">
 												<img
-													src="src/assets/img/icon/heart.png"
+													src="../src/assets/img/icon/heart.png"
 													alt=""
 												/>
 											</a>
@@ -794,7 +552,7 @@ function Product() {
 										<li>
 											<a href="#">
 												<img
-													src="src/assets/img/icon/compare.png"
+													src="../src/assets/img/icon/compare.png"
 													alt=""
 												/>{" "}
 												<span>Compare</span>
@@ -803,7 +561,7 @@ function Product() {
 										<li>
 											<a href="#">
 												<img
-													src="src/assets/img/icon/search.png"
+													src="../src/assets/img/icon/search.png"
 													alt=""
 												/>
 											</a>

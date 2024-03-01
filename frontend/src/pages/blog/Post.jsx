@@ -36,7 +36,7 @@ function Post() {
 						<div className="col-lg-12">
 							<div className="blog__details__pic">
 								<img
-									src="src/assets/img/blog/details/blog-details.jpg"
+									src="../src/assets/img/blog/details/blog-details.jpg"
 									alt=""
 								/>
 							</div>
@@ -94,18 +94,7 @@ function Post() {
 										along with Vyo-Serum helps revitalize
 										the skin.
 									</p>
-								</div>
-								<div className="blog__details__quote">
-									<i className="fa fa-quote-left"></i>
-									<p>
-										“When designing an advertisement for a
-										particular product many things should be
-										researched like where it should be
-										displayed.”
-									</p>
-									<h6>_ John Smith _</h6>
-								</div>
-								<div className="blog__details__text">
+								
 									<p>
 										Vyo-Serum along with tightening the skin
 										also reduces the fine lines indicating
@@ -131,22 +120,16 @@ function Post() {
 											<div className="blog__details__author">
 												<div className="blog__details__author__pic">
 													<img
-														src="src/assets/img/blog/details/blog-author.jpg"
+														src="../src/assets/img/blog/details/blog-author.jpg"
 														alt=""
 													/>
 												</div>
 												<div className="blog__details__author__text">
-													<h5>Aiden Blair</h5>
+													<h5>Admin</h5>
 												</div>
 											</div>
 										</div>
-										<div className="col-lg-6 col-md-6 col-sm-6">
-											<div className="blog__details__tags">
-												<a href="#">#Fashion</a>
-												<a href="#">#Trending</a>
-												<a href="#">#2020</a>
-											</div>
-										</div>
+										
 									</div>
 								</div>
 								<div className="blog__details__btns">
@@ -183,40 +166,6 @@ function Post() {
 											</a>
 										</div>
 									</div>
-								</div>
-								<div className="blog__details__comment">
-									<h4>Leave A Comment</h4>
-									<form action="#">
-										<div className="row">
-											<div className="col-lg-4 col-md-4">
-												<input
-													type="text"
-													placeholder="Name"
-												/>
-											</div>
-											<div className="col-lg-4 col-md-4">
-												<input
-													type="text"
-													placeholder="Email"
-												/>
-											</div>
-											<div className="col-lg-4 col-md-4">
-												<input
-													type="text"
-													placeholder="Phone"
-												/>
-											</div>
-											<div className="col-lg-12 text-center">
-												<textarea placeholder="Comment"></textarea>
-												<button
-													type="submit"
-													className="site-btn"
-												>
-													Post Comment
-												</button>
-											</div>
-										</div>
-									</form>
 								</div>
 							</div>
 						</div>
