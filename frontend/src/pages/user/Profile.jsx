@@ -34,13 +34,18 @@ function Profile() {
 			</section>
 			{/**His Story */}
 			<section>
+				<h2 className="border-b-2">Purchase History</h2>
 				<div className="w3/4 grid grid-cols-2">
-					<div className="w-1/4 text-center">
+					{/**Ben nay la cua ngay thang */}
+					<div className="w-1/4 text-center border-r-2">
 						<h3>01/03/2024</h3>
 					</div>
 					<div className="w-3/4 grid grid-flow-row">
-						<p>aaaaaaa</p>
-						<p>aaaaaaaaa</p>
+						{/**Ben nay la ten san pham gia tien cac thu */}
+						<div className="border-b-2">
+							<p>Tên sản phẩm</p>
+							<p>Giá tiền</p>
+						</div>
 					</div>
 				</div>
 			</section>

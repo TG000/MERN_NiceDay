@@ -7,18 +7,17 @@ function Contact() {
 			<Loader />
 
 			<Navbar />
-
+			
 			{/* Map Begin */}
 			<div className="map">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111551.9926412813!2d-90.27317134641879!3d38.606612219170856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1597926938024!5m2!1sen!2sbd"
-					height="500"
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.443661489921!2d106.62525347480609!3d10.853821089299668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1709285308734!5m2!1svi!2s" height="500"
 					style={{ border: 0 }}
 					allowfullscreen=""
 					aria-hidden="false"
-					tabindex="0"
+					tabindex="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
 				></iframe>
 			</div>
+			
 			{/* Map End */}
 
 			{/* Contact Section Begin */}
@@ -31,26 +30,22 @@ function Contact() {
 									<span>Information</span>
 									<h2>Contact Us</h2>
 									<p>
-										As you might expect of a company that
-										began as a high-end interiors
-										contractor, we pay strict attention.
+									Connect with us easily! Visit our Contact Us page for inquiries, feedback, or assistance. We're here to help and listen
 									</p>
 								</div>
 								<ul>
 									<li>
-										<h4>America</h4>
+										<h4>Vietnam</h4>
 										<p>
-											195 E Parker Square Dr, Parker, CO
-											801 <br />
-											+43 982-314-0958
+										Công viên phần mềm Quang QTSC Building 1, Trung, P Q.11, Thành phố Hồ Chí Minh, Việt Nam<br />
+											+84 0704-636-507
 										</p>
 									</li>
 									<li>
-										<h4>France</h4>
 										<p>
-											109 Avenue Léon, 63 Clermont-Ferrand{" "}
+										Công Viên Phần Mềm Quang Trung, Lô 46, Tân Chánh Hiệp, Quận 12, Thành phố Hồ Chí Minh, Việt Nam{" "}
 											<br />
-											+12 345-423-9893
+											+84 0913-123-445
 										</p>
 									</li>
 								</ul>

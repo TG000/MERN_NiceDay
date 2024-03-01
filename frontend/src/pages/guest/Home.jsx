@@ -132,7 +132,7 @@ function Home() {
 									/>
 								</div>
 								<div className="banner__item__text">
-									<h2>Men</h2>
+									<h2>Men Clothing</h2>
 									<Link to="/">Shop Now</Link>
 								</div>
 							</div>
@@ -146,7 +146,7 @@ function Home() {
 									/>
 								</div>
 								<div className="banner__item__text">
-									<h2>Women</h2>
+									<h2>Women Clothing</h2>
 									<Link to="/">Shop Now</Link>
 								</div>
 							</div>
@@ -160,7 +160,7 @@ function Home() {
 									/>
 								</div>
 								<div className="banner__item__text">
-									<h2>Kids</h2>
+									<h2>Kids Clothing</h2>
 									<Link to="/">Shop Now</Link>
 								</div>
 							</div>
@@ -562,9 +562,9 @@ function Home() {
 						<div className="col-lg-3">
 							<div className="categories__text">
 								<h2>
-									Clothings Hot <br />{" "}
-									<span>Shoe Collection</span> <br />{" "}
-									Accessories
+									Man Clothing <br />{" "}
+									<span>Women Clothing</span> <br />{" "}
+									Kids Clothing
 								</h2>
 							</div>
 						</div>
@@ -649,21 +649,10 @@ function Home() {
 							<div className="instagram__text">
 								<h2>Instagram</h2>
 								<p>
-									Welcome to Nice Day, your gateway to
-									essential style. Dive into a collection
-									curated for the modern minimalist, where
-									simplicity meets sophistication. Our site is
-									a haven of everyday elegance, offering
-									timeless pieces crafted from quality
-									fabrics. From classic tees to versatile
-									denim, discover wardrobe staples that
-									effortlessly elevate your look. Embrace
-									simplicity with a touch of flair, as Nice
-									Day becomes your go-to destination for
-									essential basics that redefine casual chic.
-									Shop with ease and refine your everyday
-									style with our curated selection of quality
-									essentials.
+
+									Welcome to Nice Day, your gateway to essential style. Dive into a collection curated for the modern minimalist, where simplicity meets sophistication. Our site is a haven of everyday elegance, offering timeless pieces crafted from quality fabrics. 
+
+
 								</p>
 								<h3>#Nice_Day</h3>
 							</div>
