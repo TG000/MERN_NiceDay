@@ -25,6 +25,7 @@ function Home() {
 						"<span class='arrow_left'><span/>",
 						"<span class='arrow_right'><span/>",
 					]}
+					navClass={"primary_btn"}
 					animateOut={"fadeOut"}
 					animateIn={"fadeIn"}
 					smartSpeed={1200}
@@ -91,10 +92,10 @@ function Home() {
 											an unwavering commitment to
 											exceptional quality.
 										</p>
-										<a href="#" className="primary-btn">
+										<Link to="" className="primary-btn">
 											Shop now{" "}
 											<span className="arrow_right"></span>
-										</a>
+										</Link>
 										<div className="hero__social">
 											<a href="#">
 												<i className="fa fa-facebook"></i>
@@ -648,7 +649,10 @@ function Home() {
 							<div className="instagram__text">
 								<h2>Instagram</h2>
 								<p>
+
 									Welcome to Nice Day, your gateway to essential style. Dive into a collection curated for the modern minimalist, where simplicity meets sophistication. Our site is a haven of everyday elegance, offering timeless pieces crafted from quality fabrics. 
+
+
 								</p>
 								<h3>#Nice_Day</h3>
 							</div>
