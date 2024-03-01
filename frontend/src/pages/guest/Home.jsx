@@ -25,6 +25,7 @@ function Home() {
 						"<span class='arrow_left'><span/>",
 						"<span class='arrow_right'><span/>",
 					]}
+					navClass={"primary_btn"}
 					animateOut={"fadeOut"}
 					animateIn={"fadeIn"}
 					smartSpeed={1200}
@@ -91,10 +92,10 @@ function Home() {
 											an unwavering commitment to
 											exceptional quality.
 										</p>
-										<a href="#" className="primary-btn">
+										<Link to="" className="primary-btn">
 											Shop now{" "}
 											<span className="arrow_right"></span>
-										</a>
+										</Link>
 										<div className="hero__social">
 											<a href="#">
 												<i className="fa fa-facebook"></i>
@@ -648,7 +649,21 @@ function Home() {
 							<div className="instagram__text">
 								<h2>Instagram</h2>
 								<p>
-									Welcome to Nice Day, your gateway to essential style. Dive into a collection curated for the modern minimalist, where simplicity meets sophistication. Our site is a haven of everyday elegance, offering timeless pieces crafted from quality fabrics. From classic tees to versatile denim, discover wardrobe staples that effortlessly elevate your look. Embrace simplicity with a touch of flair, as Nice Day becomes your go-to destination for essential basics that redefine casual chic. Shop with ease and refine your everyday style with our curated selection of quality essentials.
+									Welcome to Nice Day, your gateway to
+									essential style. Dive into a collection
+									curated for the modern minimalist, where
+									simplicity meets sophistication. Our site is
+									a haven of everyday elegance, offering
+									timeless pieces crafted from quality
+									fabrics. From classic tees to versatile
+									denim, discover wardrobe staples that
+									effortlessly elevate your look. Embrace
+									simplicity with a touch of flair, as Nice
+									Day becomes your go-to destination for
+									essential basics that redefine casual chic.
+									Shop with ease and refine your everyday
+									style with our curated selection of quality
+									essentials.
 								</p>
 								<h3>#Nice_Day</h3>
 							</div>

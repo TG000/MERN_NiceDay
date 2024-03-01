@@ -177,7 +177,7 @@ ol {
 }
 
 .text-blue-800 {
-    color: rgb(30, 64, 175);
+	color: rgb(30, 64, 175);
 }
 
 /* buttons */
@@ -250,20 +250,24 @@ ol {
 	font-size: 36px;
 	color: #333333;
 	position: absolute;
-	left: 75px;
 	top: 50%;
 	margin-top: -18px;
 	line-height: 29px;
 }
 
-.hero__slider.owl-carousel .owl-nav button.owl-next {
+.hero__slider.owl-carousel .owl-nav button.p {
+	left: 75px;
+	right: auto;
+}
+
+.hero__slider.owl-carousel .owl-nav button.r {
 	left: auto;
 	right: 75px;
 }
 
 .hero__items {
 	height: 800px;
-	padding-top: 230px;
+	padding-top: 180px;
 }
 
 .hero__text h6 {
