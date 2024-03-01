@@ -3,7 +3,7 @@ const router = express.Router();
 import {
 	createCategory,
 	updateCategory,
-} from "../controllers/categoryController";
+} from "../controllers/categoryController.js";
 
 import { authenticate, authorizeAdmin } from "../middlewares/authMiddleware";
 
