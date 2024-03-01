@@ -8,4 +8,7 @@ import Footer from "./footer/Footer";
 import UserRoute from "./routeConfigure/UserRoute";
 import AdminRoute from "./routeConfigure/AdminRoute";
 
-export { Loader, Countdown, Navbar, Footer, UserRoute, AdminRoute };
+// Global
+import Message from "./global/Message";
+
+export { Loader, Countdown, Navbar, Footer, UserRoute, AdminRoute, Message };

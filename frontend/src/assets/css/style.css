@@ -156,6 +156,30 @@ ol {
 	color: #fff;
 }
 
+.bg-green-100 {
+	background-color: rgb(220, 252, 231);
+}
+
+.text-green-800 {
+	color: rgb(22, 101, 52);
+}
+
+.bg-red-100 {
+	background-color: rgb(254, 226, 226);
+}
+
+.text-red-800 {
+	color: rgb(153, 27, 27);
+}
+
+.bg-blue-100 {
+	background-color: rgb(219, 234, 254);
+}
+
+.text-blue-800 {
+    color: rgb(30, 64, 175);
+}
+
 /* buttons */
 
 .primary-btn {
