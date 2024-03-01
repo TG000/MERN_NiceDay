@@ -561,10 +561,10 @@ function Home() {
 					<div className="row">
 						<div className="col-lg-3">
 							<div className="categories__text">
-								<h2>
+								<h2 style={{ fontSize: "30px" }}>
 									Man Clothing <br />{" "}
-									<span>Women Clothing</span> <br />{" "}
-									Kids Clothing
+									<span>Women Clothing</span> <br /> Kids
+									Clothing
 								</h2>
 							</div>
 						</div>
@@ -649,10 +649,13 @@ function Home() {
 							<div className="instagram__text">
 								<h2>Instagram</h2>
 								<p>
-
-									Welcome to Nice Day, your gateway to essential style. Dive into a collection curated for the modern minimalist, where simplicity meets sophistication. Our site is a haven of everyday elegance, offering timeless pieces crafted from quality fabrics. 
-
-
+									Welcome to Nice Day, your gateway to
+									essential style. Dive into a collection
+									curated for the modern minimalist, where
+									simplicity meets sophistication. Our site is
+									a haven of everyday elegance, offering
+									timeless pieces crafted from quality
+									fabrics.
 								</p>
 								<h3>#Nice_Day</h3>
 							</div>

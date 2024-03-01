@@ -21,6 +21,9 @@ import {
 	Profile,
 	UserList,
 	CategoryList,
+	EditProfile,
+	ChangePassword,
+	Dashboard,
 } from "./pages/";
 import { AdminRoute, UserRoute } from "./components/";
 
@@ -32,6 +35,7 @@ const router = createBrowserRouter(
 
 			{/* Admin routes */}
 			<Route path="/admin" element={<AdminRoute />}>
+				<Route path="dashboard" element={<Dashboard />} />
 				<Route path="userlist" element={<UserList />} />
 				<Route path="categorylist" element={<CategoryList />} />
 			</Route>
@@ -39,6 +43,8 @@ const router = createBrowserRouter(
 			{/* Logged In */}
 			<Route path="" element={<UserRoute />}>
 				<Route path="/profile" element={<Profile />} />
+				<Route path="/edit-profile" element={<EditProfile />} />
+				<Route path="/change-password" element={<ChangePassword />} />
 			</Route>
 
 			{/* Auth*/}

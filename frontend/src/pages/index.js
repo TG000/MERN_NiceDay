@@ -1,4 +1,5 @@
 // Admin pages
+import Dashboard from "./admin/Dashboard";
 import UserList from "./admin/UserList";
 import CategoryList from "./admin/CategoryList";
 
@@ -19,8 +20,11 @@ import About from "./guest/About";
 
 // Logged in pages
 import Profile from "./user/Profile";
+import EditProfile from "./user/EditProfile";
+import ChangePassword from "./user/ChangePassword";
 
 export {
+	Dashboard,
 	UserList,
 	CategoryList,
 	Login,
@@ -35,4 +39,6 @@ export {
 	Post,
 	About,
 	Profile,
+	EditProfile,
+	ChangePassword,
 };

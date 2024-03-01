@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useLogoutMutation } from "../../redux/api/userApiSlice";
-import { logout } from "../../redux/features/auth/authSlice";
+import { useLogoutMutation } from "../../../redux/api/userApiSlice";
+import { logout } from "../../../redux/features/auth/authSlice";
 import "./Navbar.css";
 
 const Navbar = () => {
