@@ -81,7 +81,7 @@ function About() {
 								<div className="testimonial__author">
 									<div className="testimonial__author__pic">
 										<img
-											src="src/assets/img/about/testimonial-author.jpg"
+											src="src/assets/img/about/khoile.jpg"
 											alt=""
 										/>
 									</div>
@@ -176,62 +176,62 @@ function About() {
 						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="team__item">
 								<img
-									src="src/assets/img/about/team-1.jpg"
+									src="src/assets/img/about/khoile.jpg"
 									alt=""
 								/>
-								<h4>John Smith</h4>
-								<span>Fashion Design</span>
+								<h4>Lê Bá Khôi</h4>
+								<span>Founder</span>
 							</div>
 						</div>
 						{/**Each member card end */}
 						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="team__item">
 								<img
-									src="src/assets/img/about/team-2.jpg"
+									src="src/assets/img/about/langiacd.jpg"
 									alt=""
 								/>
-								<h4>Christine Wise</h4>
+								<h4>Trần Lân Giác</h4>
+								<span>Co-Founder</span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="team__item">
+								<img
+									src="src/assets/img/about/quocanh.png"
+									alt=""
+								/>
+								<h4>Trần Phương Quốc Anh</h4>
+								<span>Fashion Design</span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="team__item">
+								<img
+									src="src/assets/img/about/loita.jpg"
+									alt=""
+								/>
+								<h4>Tạ Huỳnh Lợi</h4>
+								<span>Delivery</span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="team__item">
+								<img
+									src="src/assets/img/about/tuanvo.png"
+									alt=""
+								/>
+								<h4>Tuân Tuấn Võ Con</h4>
 								<span>C.E.O</span>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="team__item">
 								<img
-									src="src/assets/img/about/team-3.jpg"
+									src="src/assets/img/about/linhcham.png"
 									alt=""
 								/>
-								<h4>Sean Robbins</h4>
-								<span>Manager</span>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="team__item">
-								<img
-									src="src/assets/img/about/team-4.jpg"
-									alt=""
-								/>
-								<h4>Lucy Myers</h4>
-								<span>Delivery</span>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="team__item">
-								<img
-									src="src/assets/img/about/team-4.jpg"
-									alt=""
-								/>
-								<h4>Lucy Myers</h4>
-								<span>Delivery</span>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="team__item">
-								<img
-									src="src/assets/img/about/team-4.jpg"
-									alt=""
-								/>
-								<h4>Lucy Myers</h4>
-								<span>Delivery</span>
+								<h4>Trần Thị Phương Linh</h4>
+								<span>Seller</span>
 							</div>
 						</div>
 					</div>

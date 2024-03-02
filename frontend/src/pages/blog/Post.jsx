@@ -120,7 +120,7 @@ function Post() {
 											<div className="blog__details__author">
 												<div className="blog__details__author__pic">
 													<img
-														src="../src/assets/img/blog/details/blog-author.jpg"
+														src="../src/assets/img/about/langiacd.jpg"
 														alt=""
 													/>
 												</div>
