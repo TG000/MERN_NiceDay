@@ -84,7 +84,7 @@ function Shop() {
 												</div>
 											</div>
 										</div>
-										
+
 										<div className="card">
 											<div className="card-heading">
 												<a
@@ -116,7 +116,8 @@ function Shop() {
 															</li>
 															<li>
 																<a href="#">
-																	Above 1000000 VND
+																	Above
+																	1000000 VND
 																</a>
 															</li>
 														</ul>
@@ -282,7 +283,6 @@ function Shop() {
 												<i className="fa fa-star-o"></i>
 											</div>
 											<h5>$60.9</h5>
-											
 										</div>
 									</div>
 								</div>
@@ -328,7 +328,6 @@ function Shop() {
 												<i className="fa fa-star-o"></i>
 											</div>
 											<h5>$98.49</h5>
-											
 										</div>
 									</div>
 								</div>
@@ -373,7 +372,6 @@ function Shop() {
 												<i className="fa fa-star-o"></i>
 											</div>
 											<h5>$49.66</h5>
-											
 										</div>
 									</div>
 								</div>
@@ -462,7 +460,6 @@ function Shop() {
 												<i className="fa fa-star-o"></i>
 											</div>
 											<h5>$67.24</h5>
-											
 										</div>
 									</div>
 								</div>
@@ -508,7 +505,6 @@ function Shop() {
 												<i className="fa fa-star-o"></i>
 											</div>
 											<h5>$43.48</h5>
-											
 										</div>
 									</div>
 								</div>
@@ -553,7 +549,6 @@ function Shop() {
 												<i className="fa fa-star-o"></i>
 											</div>
 											<h5>$60.9</h5>
-											
 										</div>
 									</div>
 								</div>
@@ -599,7 +594,6 @@ function Shop() {
 												<i className="fa fa-star-o"></i>
 											</div>
 											<h5>$98.49</h5>
-											
 										</div>
 									</div>
 								</div>
@@ -644,7 +638,6 @@ function Shop() {
 												<i className="fa fa-star-o"></i>
 											</div>
 											<h5>$49.66</h5>
-											
 										</div>
 									</div>
 								</div>
@@ -689,7 +682,6 @@ function Shop() {
 												<i className="fa fa-star-o"></i>
 											</div>
 											<h5>$26.28</h5>
-											
 										</div>
 									</div>
 								</div>
